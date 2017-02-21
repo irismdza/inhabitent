@@ -738,7 +738,7 @@ div.site-content {
 
 .content-area {
   border-right: 1px solid #e1e1e1;
-  padding-right: 55px; }
+  padding: 55px 55px 0px 55px; }
 
 .blog .entry-header {
   position: relative;
@@ -764,7 +764,11 @@ div.site-content {
   text-transform: uppercase;
   font-family: 'novecento', sans-serif;
   color: #fff;
-  text-align: right; }
+  text-align: right;
+  position: absolute;
+  right: 0px;
+  bottom: .5rem;
+  padding: .2rem 1.5rem; }
 
 /* About page */
 div.entry-content {

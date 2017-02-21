@@ -20,7 +20,7 @@ div.site-content {
 }
 .content-area {
     border-right: 1px solid #e1e1e1;
-    padding-right: 55px;
+    padding: 55px 55px 0px 55px;
 }
 .blog {
     .entry-header{
@@ -49,6 +49,10 @@ div.site-content {
         font-family: 'novecento', sans-serif;
         color: $white;
         text-align: right;
+        position: absolute;
+        right: 0px;
+        bottom: .5rem;
+        padding: .2rem 1.5rem;
     }
 }
 
