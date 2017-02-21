@@ -736,8 +736,13 @@ div.site-content {
   display: flex;
   margin: 0 auto; }
 
+.content-area {
+  border-right: 1px solid #e1e1e1;
+  padding-right: 55px; }
+
 .blog .entry-header {
-  position: relative; }
+  position: relative;
+  width: 750px; }
 
 .blog .entry-title {
   background-color: #248A83;
@@ -780,3 +785,7 @@ div.entry-content {
   font-size: 3rem;
   color: white;
   text-align: center; }
+
+/* Widget Area */
+.widget-area {
+  padding-left: 55px; }

@@ -18,9 +18,14 @@ div.site-content {
     display: flex;
     margin: 0 auto;
 }
+.content-area {
+    border-right: 1px solid #e1e1e1;
+    padding-right: 55px;
+}
 .blog {
     .entry-header{
         position: relative;
+        width: 750px;
     }
     .entry-title {
         background-color: $green;
@@ -73,3 +78,8 @@ div.entry-content {
 	text-align: center;
 }
 
+
+/* Widget Area */
+.widget-area {
+    padding-left: 55px;
+}
