@@ -745,6 +745,7 @@ div.site-content {
   width: 750px; }
 
 .blog .entry-title {
+  font-family: 'novecento', sans-serif;
   background-color: #248A83;
   font-size: 2.1rem;
   text-transform: uppercase;

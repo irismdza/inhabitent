@@ -28,6 +28,7 @@ div.site-content {
         width: 750px;
     }
     .entry-title {
+        font-family: 'novecento', sans-serif;
         background-color: $green;
         font-size: 2.1rem;
         text-transform: uppercase;
@@ -101,7 +102,6 @@ div.site-content {
         letter-spacing: 2px;
     }
 }
-
 
 /* Widget Area */
 .widget-area {
