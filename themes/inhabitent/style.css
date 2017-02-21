@@ -738,7 +738,7 @@ div.site-content {
 
 .content-area {
   border-right: 1px solid #e1e1e1;
-  padding: 55px 55px 0px 55px; }
+  padding: 55px 55px 55px 0; }
 
 .blog .entry-header {
   position: relative;
@@ -771,24 +771,38 @@ div.site-content {
   padding: .2rem 1.5rem; }
 
 /* About page */
-div.entry-content {
-  width: 700px;
-  margin: 0 auto; }
-  div.entry-content h2 {
-    text-align: center;
-    font-family: 'novecento', sans-serif;
-    font-size: 2rem; }
-
 .page-id-40 .entry-header {
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.4) 100%), url("../../images/about-hero.jpg") no-repeat center bottom;
   background-size: cover, cover;
   height: 100vh; }
 
-.entry-title {
-  font-family: 'novecento';
+.page-id-40 .entry-title {
+  font-family: 'novecento', sans-serif;
   font-size: 3rem;
   color: white;
   text-align: center; }
+
+.page-id-40 .entry-content {
+  width: 700px;
+  margin: 0 auto; }
+  .page-id-40 .entry-content h2 {
+    text-align: center;
+    font-family: 'novecento', sans-serif;
+    font-size: 2rem; }
+
+/* Find Us */
+.page-id-43 .entry-title {
+  font-family: 'novecento', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 2.4rem;
+  margin: 0; }
+
+.page-id-43 .entry-content h2 {
+  font-size: 2.1rem;
+  font-family: 'novecento', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 2px; }
 
 /* Widget Area */
 .widget-area {
