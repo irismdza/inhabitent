@@ -552,9 +552,6 @@ a {
     text-transform: uppercase;
     color: #248a83; }
 
-.site-description {
-  display: none; }
-
 /*--------------------------------------------------------------
 # Accessibility
 --------------------------------------------------------------*/
@@ -611,6 +608,12 @@ a {
   clear: both;
   content: "";
   display: table; }
+
+.site-info {
+  display: none; }
+
+.site-description {
+  display: none; }
 
 /*--------------------------------------------------------------
 # Widgets

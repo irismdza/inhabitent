@@ -144,26 +144,16 @@ a {
 	display: flex;
 	justify-content: flex-end;
 	background-color: hsla(0,0%,100%,.85);
-		& li {
-			width: auto;
-			margin: .5rem;
-		}
-		// & li.page-item-10 a {
-		// 	content: url('../../images/logos/inhabitent-logo-tent.svg');
-		// 	width: 50px;
-		// 	position: absolute;
-		// 	right: 900px;
-		// }
-		a {
-			font-family: 'novecento';
-			text-decoration: none;
-			text-transform: uppercase;
-			color: $color__link;
-		}
-}
-
-.site-description {
-	display: none;
+	li {
+		width: auto;
+		margin: .5rem;
+	}
+	a {
+		font-family: 'novecento';
+		text-decoration: none;
+		text-transform: uppercase;
+		color: $color__link;
+	}
 }
 
 
