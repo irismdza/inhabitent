@@ -3,3 +3,73 @@
 --------------------------------------------------------------*/
 
 /* Front page */
+
+
+
+
+
+
+
+
+/* Journal */
+
+div.site-content {
+    width: 1120px;
+    display: flex;
+    margin: 0 auto;
+}
+.blog {
+    .entry-header{
+        position: relative;
+    }
+    .entry-title {
+        background-color: $green;
+        font-size: 2.1rem;
+        text-transform: uppercase;
+        text-align: left;
+        letter-spacing: 2px;
+        line-height: 2.5rem;
+        position: absolute;
+        top: 10px;
+        max-width: 75%;
+        padding: .9rem 1.5rem;
+        a {
+            color: $white;
+        }
+    }
+    .entry-meta {
+        background-color: $green;
+        font-size: 1rem;
+        text-transform: uppercase;
+        font-family: 'novecento', sans-serif;
+        color: $white;
+        text-align: right;
+    }
+}
+
+
+/* About page */
+div.entry-content {
+	width: 700px;
+	margin: 0 auto;
+	h2 {
+		text-align: center;
+        font-family: 'novecento', sans-serif;
+        font-size: 2rem;
+	}
+}
+
+.page-id-40 .entry-header {
+	background:	linear-gradient( to bottom, rgba(0,0,0,0.4) 0%, rgba(0,0,0,0.4) 100% ),
+	url('../../images/about-hero.jpg') no-repeat center bottom;
+	background-size: cover, cover;
+	height: 100vh;
+}	
+
+.entry-title {
+	font-family: 'novecento';
+	font-size: 3rem;
+	color: white;
+	text-align: center;
+}
+

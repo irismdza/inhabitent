@@ -25,6 +25,8 @@
 .entry-content,
 .entry-summary {
 	margin: $base__space-unit 0 0;
+	color: $color__text-main;
+	font-family: 'merriweather', serif;
 }
 
 .page-links {

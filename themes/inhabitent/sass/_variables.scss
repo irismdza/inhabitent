@@ -15,14 +15,24 @@ $color__background-pre: #eee;
 $color__background-ins: #fff9c0;
 $color__border-abbr: #666;
 
-$color__link: royalblue;
-$color__link-visited: purple;
-$color__link-hover: midnightblue;
+$color__link: #248a83;
+$color__link-visited: #248a83;
+$color__link-hover: #2f1339;
 
 // Typography
 
-$font__main: sans-serif;
+$font__main: 'merriweather', sans-serif;
 $font__code: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
 $font__pre: "Courier 10 Pitch", Courier, monospace;
-$font__line-height-body: 1.5;
-$font__line-height-pre: 1.6;
+$font__line-height-body: 1.7;
+$font__line-height-pre: 1.7;
+
+
+// Brand Colors
+$white: #fff;
+$green: #248A83;
+$purple: #2f1339;
+$orange: #d99054;
+$yellow: #f0e4d1;
+$light_grey: #a1a1a1;
+$medium_grey: #808080;

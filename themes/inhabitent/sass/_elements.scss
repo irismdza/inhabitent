@@ -61,10 +61,13 @@ dd {
 
 img {
 	height: auto; /* Make sure images are scaled correctly. */
-	max-width: 100%; /* Adhere to container width. */
+	width: 100%; /* Adhere to container width. **** changed from max-width by iris*/
 }
 
 table {
 	margin: 0 0 $base__space-unit;
 	width: 100%;
+}
+a {
+	text-decoration: none;
 }
