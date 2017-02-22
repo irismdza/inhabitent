@@ -883,6 +883,10 @@ object {
       .footer-inhabitent .footer-container .footer-contact .day-of-week,
       .footer-inhabitent .footer-container .footer-hours .day-of-week {
         font-weight: bold; }
+      .footer-inhabitent .footer-container .footer-contact i,
+      .footer-inhabitent .footer-container .footer-hours i {
+        font-size: 1.3rem;
+        margin-right: 6px; }
     .footer-inhabitent .footer-container .footer-logo {
       -ms-flex: 1 0 50%;
           flex: 1 0 50%;
