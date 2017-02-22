@@ -377,8 +377,8 @@ dd {
 img {
   height: auto;
   /* Make sure images are scaled correctly. */
-  width: 100%;
-  /* Adhere to container width. **** changed from max-width by iris*/ }
+  max-width: 100%;
+  /* Adhere to container width. */ }
 
 table {
   margin: 0 0 1.5rem;
@@ -847,13 +847,13 @@ div.site-content {
     display: -ms-flexbox;
     display: flex;
     -ms-flex-wrap: wrap;
-        flex-wrap: wrap; }
+        flex-wrap: wrap;
+    padding-top: 60px; }
     .footer-inhabitent .footer-container .footer-contact,
     .footer-inhabitent .footer-container .footer-hours {
       -ms-flex: 1 0 25%;
           flex: 1 0 25%;
-      color: #fff;
-      padding: 50px 0px; }
+      color: #fff; }
       .footer-inhabitent .footer-container .footer-contact h3,
       .footer-inhabitent .footer-container .footer-hours h3 {
         font-family: 'novecento', serif;
@@ -876,11 +876,15 @@ div.site-content {
         font-weight: bold; }
     .footer-inhabitent .footer-container .footer-logo {
       -ms-flex: 1 0 50%;
-          flex: 1 0 50%; }
-    .footer-inhabitent .footer-container .footer-copyright {
-      -ms-flex: 1 0 100%;
-          flex: 1 0 100%;
-      text-align: center;
-      font-family: 'novecento', sans-serif;
-      text-transform: uppercase;
-      color: #fff; }
+          flex: 1 0 50%;
+      text-align: right; }
+      .footer-inhabitent .footer-container .footer-logo img {
+        width: 50%; }
+  .footer-inhabitent .footer-copyright {
+    -ms-flex: 1 0 100%;
+        flex: 1 0 100%;
+    text-align: center;
+    font-family: 'novecento', sans-serif;
+    text-transform: uppercase;
+    color: #fff;
+    padding: 80px 0 0 0; }

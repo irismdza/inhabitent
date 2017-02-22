@@ -61,7 +61,7 @@ dd {
 
 img {
 	height: auto; /* Make sure images are scaled correctly. */
-	width: 100%; /* Adhere to container width. **** changed from max-width by iris*/
+	max-width: 100%; /* Adhere to container width. */
 }
 
 table {
