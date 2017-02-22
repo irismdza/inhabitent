@@ -808,6 +808,79 @@ div.site-content {
   text-transform: uppercase;
   letter-spacing: 2px; }
 
+.page-id-43 .wpcf7 label {
+  font-family: 'novecento', sans-serif;
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  margin-bottom: .3rem; }
+
+.page-id-43 .wpcf7 input[type=text],
+.page-id-43 .wpcf7 input[type=email],
+.page-id-43 .wpcf7 textarea {
+  background-color: #f4f4f4;
+  border: 1px solid #e1e1e1;
+  border-radius: 0;
+  font-family: 'merriweather', serif; }
+
+.page-id-43 .wpcf7 input[type=submit] {
+  font-family: 'novecento', sans-serif;
+  text-transform: uppercase;
+  color: white;
+  font-size: .9rem;
+  background-color: #248A83;
+  border: none;
+  border-radius: 0;
+  padding: 13px 30px;
+  box-shadow: none;
+  text-shadow: none; }
+
 /* Widget Area */
 .widget-area {
   padding-left: 55px; }
+
+.footer-inhabitent {
+  background: url("../../images/dark-wood.png") repeat-x center bottom;
+  background-size: contain; }
+  .footer-inhabitent .footer-container {
+    width: 1120px;
+    margin: 0 auto;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    padding-top: 100px; }
+    .footer-inhabitent .footer-container .footer-contact,
+    .footer-inhabitent .footer-container .footer-hours {
+      -ms-flex: 1 0 25%;
+          flex: 1 0 25%;
+      color: #fff; }
+      .footer-inhabitent .footer-container .footer-contact h3,
+      .footer-inhabitent .footer-container .footer-hours h3 {
+        font-family: 'novecento', serif;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        font-size: 1.2rem;
+        color: #d99054;
+        margin: 0; }
+      .footer-inhabitent .footer-container .footer-contact p,
+      .footer-inhabitent .footer-container .footer-hours p {
+        margin-bottom: 0; }
+      .footer-inhabitent .footer-container .footer-contact a,
+      .footer-inhabitent .footer-container .footer-hours a {
+        color: #fff; }
+      .footer-inhabitent .footer-container .footer-contact a:hover,
+      .footer-inhabitent .footer-container .footer-hours a:hover {
+        text-decoration: underline; }
+      .footer-inhabitent .footer-container .footer-contact .day-of-week,
+      .footer-inhabitent .footer-container .footer-hours .day-of-week {
+        font-weight: bold; }
+    .footer-inhabitent .footer-container .footer-logo {
+      -ms-flex: 1 0 50%;
+          flex: 1 0 50%; }
+    .footer-inhabitent .footer-container .footer-copyright {
+      -ms-flex: 1 0 100%;
+          flex: 1 0 100%;
+      text-align: center;
+      font-family: 'novecento', sans-serif;
+      text-transform: uppercase;
+      color: #fff; }

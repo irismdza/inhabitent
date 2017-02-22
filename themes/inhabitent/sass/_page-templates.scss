@@ -101,6 +101,34 @@ div.site-content {
         text-transform: uppercase;
         letter-spacing: 2px;
     }
+    .wpcf7 {
+        label {
+            font-family: 'novecento', sans-serif;
+            font-size: 1.1rem;
+            text-transform: uppercase;
+            margin-bottom: .3rem;
+        }
+        input[type=text],
+        input[type=email],
+        textarea {
+            background-color: #f4f4f4;
+            border: 1px solid #e1e1e1;
+            border-radius: 0;
+            font-family: 'merriweather', serif;
+        }
+        input[type=submit] {
+            font-family: 'novecento', sans-serif;
+            text-transform: uppercase;
+            color: white;
+            font-size: .9rem;
+            background-color: $green;
+            border: none;
+            border-radius: 0;
+            padding: 13px 30px;
+            box-shadow: none;
+            text-shadow: none;
+        }
+    }
 }
 
 /* Widget Area */

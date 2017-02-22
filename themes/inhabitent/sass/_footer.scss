@@ -1,0 +1,46 @@
+.footer-inhabitent {
+    background: url('../../images/dark-wood.png') repeat-x center bottom;
+    background-size: contain;
+    .footer-container {
+        width: 1120px;
+        margin: 0 auto;
+        display: flex;
+        flex-wrap: wrap;
+        padding-top: 100px;
+        .footer-contact,
+        .footer-hours {
+            flex: 1 0 25%;
+            color: $white;
+            h3 {
+                font-family: 'novecento', serif;
+                text-transform: uppercase;
+                letter-spacing: 2px;
+                font-size: 1.2rem;
+                color: $orange;
+                margin: 0;
+            }
+            p {
+                margin-bottom: 0;
+            }
+            a {
+                color: $white;
+            }
+            a:hover {
+                text-decoration: underline;
+            }
+            .day-of-week {
+                font-weight: bold;
+            }
+        }
+        .footer-logo {
+            flex: 1 0 50%;
+        }
+        .footer-copyright {
+            flex: 1 0 100%;
+            text-align: center;
+            font-family: 'novecento', sans-serif;
+            text-transform: uppercase;
+            color: $white;
+        }
+    }
+}
