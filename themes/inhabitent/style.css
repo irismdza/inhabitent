@@ -637,6 +637,14 @@ a {
 .business-hours-widget-class .business-hours-day {
   font-weight: bold; }
 
+/* Archive widget */
+.widget_archive ul {
+  margin: 0;
+  padding: 0; }
+
+.widget_archive li {
+  list-style-type: none; }
+
 /*--------------------------------------------------------------
 # Content
 --------------------------------------------------------------*/
@@ -808,6 +816,11 @@ object {
     font-size: 2rem; }
 
 /* Find Us */
+.page-id-43 .content-area {
+  width: 750px;
+  padding: 40px 55px 175px 0;
+  border-right: 1px solid #e1e1e1; }
+
 .page-id-43 .entry-title {
   font-family: 'novecento', sans-serif;
   text-transform: uppercase;
