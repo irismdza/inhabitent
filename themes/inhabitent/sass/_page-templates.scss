@@ -13,19 +13,25 @@
 
 /* Journal */
 
-div.site-content {
+.site-content {
     width: 1120px;
     display: flex;
     margin: 0 auto;
 }
-.content-area {
+.blog {
+    .post {
+        width: 750px;
+    }
+    .content-area {
     border-right: 1px solid #e1e1e1;
     padding: 55px 55px 55px 0;
-}
-.blog {
+    }
     .entry-header{
         position: relative;
-        width: 750px;
+        // width: 750px;
+        img {
+            width: 100%;
+        }
     }
     .entry-title {
         font-family: 'novecento', sans-serif;
@@ -129,9 +135,4 @@ div.site-content {
             text-shadow: none;
         }
     }
-}
-
-/* Widget Area */
-.widget-area {
-    padding-left: 55px;
 }

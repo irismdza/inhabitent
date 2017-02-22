@@ -620,13 +620,22 @@ a {
 --------------------------------------------------------------*/
 .widget {
   margin: 0 0 1.5rem;
+  padding-left: 55px;
   /* Make sure select elements fit in widgets. */ }
   .widget select {
     max-width: 100%; }
+  .widget .widget-title {
+    font-family: 'novecento', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px; }
 
-/* Search widget. */
+/* Search widget */
 .widget_search .search-submit {
   display: none; }
+
+/* Business Hours widget */
+.business-hours-widget-class .business-hours-day {
+  font-weight: bold; }
 
 /*--------------------------------------------------------------
 # Content
@@ -733,19 +742,23 @@ object {
 --------------------------------------------------------------*/
 /* Front page */
 /* Journal */
-div.site-content {
+.site-content {
   width: 1120px;
   display: -ms-flexbox;
   display: flex;
   margin: 0 auto; }
 
-.content-area {
+.blog .post {
+  width: 750px; }
+
+.blog .content-area {
   border-right: 1px solid #e1e1e1;
   padding: 55px 55px 55px 0; }
 
 .blog .entry-header {
-  position: relative;
-  width: 750px; }
+  position: relative; }
+  .blog .entry-header img {
+    width: 100%; }
 
 .blog .entry-title {
   font-family: 'novecento', sans-serif;
@@ -833,10 +846,6 @@ div.site-content {
   padding: 13px 30px;
   box-shadow: none;
   text-shadow: none; }
-
-/* Widget Area */
-.widget-area {
-  padding-left: 55px; }
 
 .footer-inhabitent {
   background: url("../../images/dark-wood.png") repeat-x center bottom;

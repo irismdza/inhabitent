@@ -4,14 +4,26 @@
 
 .widget {
 	margin: 0 0 $base__space-unit;
-
+	padding-left: 55px;
 	/* Make sure select elements fit in widgets. */
 	select {
 		max-width: 100%;
 	}
+	.widget-title {
+		font-family: 'novecento', sans-serif;
+		text-transform: uppercase;
+		letter-spacing: 2px;
+	}
 }
 
-/* Search widget. */
+/* Search widget */
 .widget_search .search-submit {
 	display: none;
+}
+
+/* Business Hours widget */
+.business-hours-widget-class {
+	.business-hours-day {
+		font-weight: bold;
+	}
 }
