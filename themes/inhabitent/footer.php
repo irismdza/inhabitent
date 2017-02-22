@@ -32,7 +32,7 @@
 		<p><span class="day-of-week">Sunday:</span> Closed</p>
 	</div>
 	<div class="footer-logo">
-		<img src="../images/logos/inhabitent-tent-dark.svg" />
+		<img src="wp-content/themes/inhabitent/images/logos/inhabitent-tent-dark.svg" />
 	</div>
 	<div class="footer-copyright">
 		<p>Copyright &copy; 2017 Inhabitent</p>
