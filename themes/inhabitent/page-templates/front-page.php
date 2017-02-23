@@ -1,17 +1,19 @@
 <?php
 /**
- * Template Name: Home Template
+ * Template Name: Front Page Template
  *
- * @package RED_Starter_Theme
+ * @package Inhabitent Theme
  */
 
 get_header(); ?>
      <section class="home-hero">
         <img src="<?php echo get_template_directory_uri(); ?>/images/logos/inhabitent-logo-full.svg" alt="Image of Inhabitent logo" />
     </section>
+
     <?php  //shop stuff on front page
                             $arg = array( 'taxonomy' => 'product_type',
-                                          'hide_empty' => true);
+                                            'orderby' => 'name',
+                                            'hide_empty' => true);
                             $terms = get_terms( $arg );
                         ?>
 
@@ -19,6 +21,13 @@ get_header(); ?>
                             <ul>
                                 <?php foreach ( $terms as $term ) : ?>
                                     <li><a href="<?php echo get_term_link($term); ?>"><?php echo $term->name; ?></a></li>
+
+                                    <div class="shop-stuff-item">
+                                        <div class="product-icon-image">
+                                            <img src="<?php echo get_template_directory_uri();?>/images/product-type-icons/<?php echo $term->slug; ?>.svg" alt="">
+                                        </div>
+                                    </div>
+
                                 <?php endforeach; ?>
                             </ul>
 
