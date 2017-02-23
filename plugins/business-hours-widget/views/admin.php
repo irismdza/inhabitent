@@ -16,5 +16,4 @@
    <p><label for="<?php echo $this->get_field_id('sunday'); ?>">Sunday:</label>
 		<input class="widefat" id="<?php echo $this->get_field_id('sunday'); ?>" name="<?php echo $this->get_field_name('sunday'); ?>" type="text" value="<?php echo $sunday; ?>">
    </p>
-
 </div>

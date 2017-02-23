@@ -12,13 +12,11 @@
 
 
 /* Journal */
-
-.site-content {
-    width: 1120px;
-    display: flex;
-    margin: 0 auto;
-}
 .blog {
+    .site-content {
+    width: 1120px;
+    margin: 0 auto;
+    }
     .post {
         width: 750px;
     }

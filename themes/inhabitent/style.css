@@ -750,10 +750,8 @@ object {
 --------------------------------------------------------------*/
 /* Front page */
 /* Journal */
-.site-content {
+.blog .site-content {
   width: 1120px;
-  display: -ms-flexbox;
-  display: flex;
   margin: 0 auto; }
 
 .blog .post {

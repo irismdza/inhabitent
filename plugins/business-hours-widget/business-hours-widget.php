@@ -9,7 +9,7 @@
  * @package   Business_Hours_Widget
  * @author    Iris Mendoza <mdza.iris@gmail.com>
  * @license   GPL-2.0+
- * @link      http://example.com
+ * @link      http://www.redacademy.com
  * @copyright 2017 RED Academy
  *
  * @wordpress-plugin
@@ -163,7 +163,6 @@ class Business_Hours_Widget extends WP_Widget {
 
 } // end class
 
-// TODO: Remember to change 'Business_Hours_Widget' to match the class name definition
 add_action( 'widgets_init', function(){
      register_widget( 'Business_Hours_Widget' );
 });
