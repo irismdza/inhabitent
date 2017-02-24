@@ -102,7 +102,7 @@ function sort_product_type( $query ) {
 }
 add_action( 'pre_get_posts', 'sort_product_type' );
 
-// Remove Product Archive title
+// Change Product Archive title
 function change_product_archive_title( $title ) {
 	if ( is_post_type_archive( 'products') ) {
         $title = 'Shop Stuff';
@@ -110,3 +110,12 @@ function change_product_archive_title( $title ) {
 	return $title;
 }
 add_filter( 'get_the_archive_title', 'change_product_archive_title' );
+
+// Remove Product Type title
+function remove_product_type_title( $title ) {
+	if ( is_tax( 'product_type' ) ) {
+        $title = single_term_title( '', false);
+	}
+	return $title;
+}
+add_filter( 'get_the_archive_title', 'remove_product_type_title' );
