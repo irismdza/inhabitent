@@ -1,6 +1,6 @@
 <?php
 /**
- * The template for displaying archive for the products post type (Shop page).
+ * Template Name: Home Page
  *
  * @package RED_Starter_Theme
  */
@@ -18,21 +18,6 @@ get_header(); ?>
 					the_archive_description( '<div class="taxonomy-description">', '</div>' );
 				?>
 			</header><!-- .page-header -->
-
-		<?php  //shop stuff on front page
-			$arg = array( 'taxonomy' => 'product_type',
-							'orderby' => 'name',
-							'hide_empty' => true);
-			$terms = get_terms( $arg );
-		?>
-
-		<div class="product-list-style">
-			<ul>
-				<?php foreach ( $terms as $term ) : ?>
-					<li><a href="<?php echo get_term_link($term); ?>"><?php echo $term->name; ?></a></li>
-
-				<?php endforeach; ?>
-			</ul>
 
 			<?php /* Start the Loop */ ?>
 			<?php while ( have_posts() ) : the_post(); ?>
