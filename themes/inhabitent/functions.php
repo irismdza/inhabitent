@@ -131,3 +131,12 @@ function sort_product_archive( $query ) {
     }
 }
 add_action( 'pre_get_posts', 'sort_product_archive' );
+
+// Remove Product Archive title
+function remove_product_archive_title( $title ) {
+	if ( is_post_type_archive( 'products') ) {
+        $title = 'Shop Stuff';
+	}
+	return $title;
+}
+add_filter( 'get_the_archive_title', 'remove_product_archive_title' );
