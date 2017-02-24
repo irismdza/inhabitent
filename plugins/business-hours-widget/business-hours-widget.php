@@ -15,7 +15,7 @@
  * @wordpress-plugin
  * Plugin Name:       Business Hours Widget
  * Plugin URI:        @TODO
- * Description:       A handy business hours wdget.
+ * Description:       A handy business hours widget.
  * Version:           1.0.0
  * Author:            Iris Mendoza
  * Author URI:        @TODO
