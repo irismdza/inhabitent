@@ -91,11 +91,22 @@ function sort_product_archive( $query ) {
 }
 add_action( 'pre_get_posts', 'sort_product_archive' );
 
+// Sort Product Taxonomies alphabetically
+function sort_product_type( $query ) {
+    if ( $query->is_tax('product_type') && $query->is_main_query() ) {
+		$query->set( 'posts_per_page', -1 );
+        $query->set( 'orderby', 'title' );
+        $query->set( 'order', 'ASC' );
+		return;
+    }
+}
+add_action( 'pre_get_posts', 'sort_product_type' );
+
 // Remove Product Archive title
-function remove_product_archive_title( $title ) {
+function change_product_archive_title( $title ) {
 	if ( is_post_type_archive( 'products') ) {
         $title = 'Shop Stuff';
 	}
 	return $title;
 }
-add_filter( 'get_the_archive_title', 'remove_product_archive_title' );
+add_filter( 'get_the_archive_title', 'change_product_archive_title' );
