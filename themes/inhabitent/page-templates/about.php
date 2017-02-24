@@ -19,4 +19,5 @@ get_header(); ?>
         <?php echo CFS()->get('about_our_team'); ?>
     </main>
     </div>
+    
 <?php get_footer(); ?>
