@@ -3,7 +3,14 @@
 --------------------------------------------------------------*/
 
 /* Front page */
-
+.page-template-front-page {
+    .product-list-style {
+        ul {
+            list-style: none;
+            display: flex;
+        }
+    }
+}
 
 
 

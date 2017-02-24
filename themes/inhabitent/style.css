@@ -749,6 +749,11 @@ object {
 # Page Templates
 --------------------------------------------------------------*/
 /* Front page */
+.page-template-front-page .product-list-style ul {
+  list-style: none;
+  display: -ms-flexbox;
+  display: flex; }
+
 /* Journal */
 .blog .site-content {
   width: 1120px;
