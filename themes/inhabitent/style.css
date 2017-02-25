@@ -548,7 +548,9 @@ a {
     font-family: 'novecento';
     text-decoration: none;
     text-transform: uppercase;
-    color: #248a83; }
+    color: #248A83; }
+  .main-navigation a:hover {
+    color: #2f1339; }
 
 /*--------------------------------------------------------------
 # Accessibility
