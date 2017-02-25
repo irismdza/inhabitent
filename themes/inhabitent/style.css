@@ -533,20 +533,18 @@ a {
   width: 50%; }
 
 .main-navigation {
-  border-bottom: 1px solid #e1e1e1; }
-
-#primary-menu {
-  width: 1120px;
   margin: 0 auto;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: end;
       justify-content: flex-end;
-  background-color: rgba(255, 255, 255, 0.85); }
-  #primary-menu li {
+  background-color: rgba(255, 255, 255, 0.85);
+  border-bottom: 1px solid #e1e1e1;
+  position: fixed; }
+  .main-navigation li {
     width: auto;
     margin: .5rem; }
-  #primary-menu a {
+  .main-navigation a {
     font-family: 'novecento';
     text-decoration: none;
     text-transform: uppercase;
@@ -685,6 +683,10 @@ a {
 .bypostauthor {
   display: block; }
 
+.container {
+  width: 1120px;
+  margin: 0 auto; }
+
 /*--------------------------------------------------------------
 # Media
 --------------------------------------------------------------*/
@@ -749,10 +751,77 @@ object {
 # Page Templates
 --------------------------------------------------------------*/
 /* Front page */
-.page-template-front-page .product-list-style ul {
-  list-style: none;
+.page-template-front-page .front-page-hero {
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.4) 100%), url("../../images/home-hero.jpg") no-repeat center top;
+  background-size: cover, cover;
+  height: 100vh;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  width: 100%; }
+
+.page-template-front-page .shop-stuff-links {
+  margin: 75px 0;
+  text-align: center; }
+  .page-template-front-page .shop-stuff-links ul {
+    list-style: none;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 0;
+    padding: 0; }
+  .page-template-front-page .shop-stuff-links img {
+    width: 70px;
+    height: 70px; }
+  .page-template-front-page .shop-stuff-links a {
+    background-color: #248A83;
+    color: #fff;
+    font-family: 'novecento', sans-serif;
+    text-transform: uppercase;
+    font-size: .9rem;
+    padding: 12px 25px; }
+  .page-template-front-page .shop-stuff-links a:hover {
+    background-color: #19625d; }
+  .page-template-front-page .shop-stuff-links li {
+    border: 1px solid #e1e1e1;
+    border-top-width: 5px;
+    padding: 13px;
+    padding-bottom: 25px;
+    margin: 10px; }
+  .page-template-front-page .shop-stuff-links li:hover {
+    border-color: #d99054; }
+
+.page-template-front-page .journal-entry-links {
   display: -ms-flexbox;
   display: flex; }
+  .page-template-front-page .journal-entry-links .latest-post {
+    margin: 10px;
+    -ms-flex: 0 0 33%;
+        flex: 0 0 33%; }
+  .page-template-front-page .journal-entry-links .post-thumbnail {
+    height: 250px; }
+  .page-template-front-page .journal-entry-links .post-title {
+    font-family: 'novecento', sans-serif;
+    text-transform: uppercase;
+    font-size: 1.3rem;
+    letter-spacing: 1px;
+    color: #248A83; }
+  .page-template-front-page .journal-entry-links .post-meta-data {
+    border: 1px solid #e1e1e1;
+    border-top-width: 5px;
+    padding: 20px; }
+  .page-template-front-page .journal-entry-links img {
+    width: 100%;
+    height: 250px; }
+  .page-template-front-page .journal-entry-links a {
+    font-family: 'novecento', sans-serif;
+    text-transform: uppercase;
+    font-size: .9rem;
+    padding: 12px 25px;
+    border: 1px solid #404040;
+    color: #404040; }
 
 /* Journal */
 .blog .site-content {
@@ -799,11 +868,6 @@ object {
   padding: .2rem 1.5rem; }
 
 /* About page */
-.page-id-40 .entry-header {
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.4) 100%), url("../../images/about-hero.jpg") no-repeat center bottom;
-  background-size: cover, cover;
-  height: 100vh; }
-
 .page-id-40 .entry-title {
   font-family: 'novecento', sans-serif;
   font-size: 3rem;

@@ -9,6 +9,7 @@ get_header(); ?>
 
 	<header class="entry-header">
 		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
+        <img src="<?php echo CFS()->get('about_header_image'); ?>" />
 	</header><!-- .entry-header -->
 
     <div id="primary" class="content-area">

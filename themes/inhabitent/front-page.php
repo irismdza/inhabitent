@@ -10,7 +10,7 @@ get_header(); ?>
         <img src="<?php echo get_template_directory_uri(); ?>/images/logos/inhabitent-logo-full.svg" alt="Inhabitent Camping Supply Logo" />
     </section>
 
-    <section id="primary" class="content-area">
+    <section id="primary" class="content-area container">
         <main id="main" class="site-main" role="main">
             <?php  //shop stuff links on front page
                     $arg = array( 'taxonomy' => 'product_type',
@@ -39,20 +39,22 @@ get_header(); ?>
             <div class="journal-entry-links">
                 <?php
                     //global $post;
-                    $args = array( 'posts_per_page' => 3, 'order'=> 'DSC', 'orderby' => 'post_date' );
+                    $args = array( 
+                        'posts_per_page' => 3, 
+                        'order'=> 'DSC', 
+                        'orderby' => 'post_date' 
+                    );
                     $postslist = get_posts( $args );
-                    foreach ( $postslist as $post ) :
+                    foreach ( $postslist as $post ):
                         setup_postdata( $post ); ?> 
-                        <div class="a-post">
-                            <span class="post-thumbnail">    <?php if ( has_post_thumbnail() ) : ?>
-                                    <?php the_post_thumbnail('medium'); ?>
-                            </span>
-                            <?php endif; ?>
+                        <div class="latest-post">
+                            <div class="post-thumbnail">
+                            <?php the_post_thumbnail('medium'); ?>
+                            </div>
                             <div class="post-meta-data">
-                                <span class="post-date"><?php the_date(); ?></span>
-                                <br />
+                                <p class="post-date"><?php the_date(); ?></p>
                                 <h3 class="post-title"><?php the_title(); ?></h3>
-                                <p class="read-entry"><a href="<?php the_permalink(); ?>"><div class="link-button">Read Entry</div></a></p>
+                                <p class="read-entry-link"><a href="<?php the_permalink(); ?>">Read Entry</a></p>
                             </div><!--post-meta-data -->                
                     </div> <!-- a-post-->
                 <?php

@@ -135,15 +135,13 @@ a {
 // edited:
 
 .main-navigation {
-	border-bottom: 1px solid #e1e1e1;
-}
-
-#primary-menu {
-	width: 1120px;
 	margin: 0 auto;
 	display: flex;
 	justify-content: flex-end;
 	background-color: hsla(0,0%,100%,.85);
+	border-bottom: 1px solid #e1e1e1;
+	position: fixed;
+	// z-index: 3;
 	li {
 		width: auto;
 		margin: .5rem;
