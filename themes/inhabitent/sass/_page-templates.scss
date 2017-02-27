@@ -28,12 +28,7 @@
             height: 70px;
         }
         a {
-            background-color: $green;
-            color: $white;
-            font-family: 'novecento', sans-serif;
-            text-transform: uppercase;
-            font-size: .9rem;
-            padding: 12px 25px;
+            @include green-button;
         }
         a:hover {
             background-color: #19625d;
@@ -58,16 +53,22 @@
         .post-thumbnail {
             height: 250px;
         }
+        .post-date {
+            font-size: .8rem;
+            margin: 0;
+        }
         .post-title {
             font-family: 'novecento', sans-serif;
             text-transform: uppercase;
             font-size: 1.3rem;
-            letter-spacing: 1px;
+            letter-spacing: 2px;
             color: $green;
+            margin: 3px 0;
+            line-height: 1.5rem;
         }
         
         .post-meta-data {
-            border: 1px solid #e1e1e1;
+            @include gray-border;
             border-top-width: 5px;
             padding: 20px;
         }
@@ -78,7 +79,7 @@
        a {
             font-family: 'novecento', sans-serif;
             text-transform: uppercase;
-            &.read-entry-link {
+            .read-entry-link {
                 font-size: .9rem;
                 padding: 12px 25px;
                 border: 1px solid $color__text-main;

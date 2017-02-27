@@ -10,3 +10,26 @@
 	margin-left: auto;
 	margin-right: auto;
 }
+
+
+// Green button links
+@mixin green-button {
+	background-color: $green;
+	color: $white;
+	font-family: 'novecento', sans-serif;
+	text-transform: uppercase;
+	font-size: .9rem;
+	padding: 12px 25px;
+}
+
+// Light gray border
+@mixin gray-border {
+	border: 1px solid #e1e1e1;
+}
+
+// Green title font
+@mixin heading-font {
+	font-family: 'novecento', sans-serif;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+}
