@@ -50,4 +50,29 @@
 	letter-spacing: 2px;
 }
 
-// 
+// Flex site content
+@mixin flex-site-content {
+	.site-content {
+	width: 1120px;
+    margin: 0 auto;
+    display: flex;
+    }
+	.post,
+	.content-area {
+	width: 750px;
+    }
+}
+
+// Widget area
+@mixin widget-area {
+	.widget-area {
+        margin-top: 33px;
+        padding-top: 75px;
+        i {
+            padding-right: 10px;
+        }
+    }
+	.widget {
+		margin-bottom: 50px;
+	}
+}
