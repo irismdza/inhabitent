@@ -41,6 +41,8 @@ get_header(); ?>
 					<?php
 						get_template_part( 'template-parts/content' );
 					?>
+					<span class="product-price"><?php echo CFS()->get('price'); ?></span>
+
 
 				<?php endwhile; ?>
 

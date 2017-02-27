@@ -882,6 +882,52 @@ object {
       height: 250px;
       width: auto; }
 
+/* Single-Products */
+.single-products .site-main {
+  margin-top: 90px; }
+
+.single-products .entry-header {
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 150px; }
+
+.single-products .entry-title {
+  font-family: 'novecento', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #d99054;
+  font-size: 2.5rem;
+  margin: 0;
+  line-height: 2.5rem; }
+
+.single-products .product-image-wrapper {
+  -ms-flex: 1 1 50%;
+      flex: 1 1 50%; }
+
+.single-products .product-description-wrapper {
+  -ms-flex: 1 1 50%;
+      flex: 1 1 50%;
+  margin-left: 50px; }
+
+.single-products .product-price {
+  font-family: 'novecento', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 1.8rem;
+  line-height: 1.8rem; }
+
+.single-products .product-social-links {
+  display: -ms-flexbox;
+  display: flex; }
+  .single-products .product-social-links a {
+    font-family: 'novecento', sans-serif;
+    text-transform: uppercase;
+    font-size: .9rem;
+    padding: 11px 22px;
+    border: 1px solid #404040;
+    color: #404040;
+    margin-right: 5px; }
+
 /* Journal */
 .blog .site-content {
   width: 1120px;

@@ -22,6 +22,15 @@
 	padding: 12px 25px;
 }
 
+// Gray button links
+@mixin gray-button {
+	font-family: 'novecento', sans-serif;
+	text-transform: uppercase;
+	font-size: .9rem;
+	padding: 11px 22px;
+	border: 1px solid $color__text-main;
+	color: $color__text-main;
+}
 // Light gray border
 @mixin gray-border {
 	border: 1px solid #e1e1e1;
