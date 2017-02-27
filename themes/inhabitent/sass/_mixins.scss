@@ -27,9 +27,16 @@
 	border: 1px solid #e1e1e1;
 }
 
-// Green title font
+// uppercase
+@mixin uppercase-font {
+	font-family: 'novecento', sans-serif;
+	text-transform: uppercase;
+}
+// Heading font
 @mixin heading-font {
 	font-family: 'novecento', sans-serif;
 	text-transform: uppercase;
 	letter-spacing: 2px;
 }
+
+// 

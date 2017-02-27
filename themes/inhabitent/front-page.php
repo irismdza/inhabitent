@@ -19,6 +19,7 @@ get_header(); ?>
                     $terms = get_terms( $arg );
             ?>
             <div class="shop-stuff-links">
+                <!--<h2><?php the_archive_description(); ?></h2>-->
                 <ul>
                     <?php foreach ( $terms as $term ) : ?>
                         <li>
