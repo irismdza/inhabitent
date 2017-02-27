@@ -784,7 +784,8 @@ object {
     font-family: 'novecento', sans-serif;
     text-transform: uppercase;
     font-size: .9rem;
-    padding: 12px 25px; }
+    padding: 11px 22px;
+    border: 1px solid #248A83; }
   .page-template-front-page .shop-stuff-links a:hover {
     background-color: #19625d; }
   .page-template-front-page .shop-stuff-links li {
@@ -927,6 +928,14 @@ object {
     border: 1px solid #404040;
     color: #404040;
     margin-right: 5px; }
+  .single-products .product-social-links a:hover {
+    background-color: #248A83;
+    color: #fff;
+    font-family: 'novecento', sans-serif;
+    text-transform: uppercase;
+    font-size: .9rem;
+    padding: 11px 22px;
+    border: 1px solid #248A83; }
 
 /* Journal */
 .blog .site-content {

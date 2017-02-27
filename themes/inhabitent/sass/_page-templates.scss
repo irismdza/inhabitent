@@ -165,6 +165,9 @@
             @include gray-button;
             margin-right: 5px;
         }
+        a:hover {
+            @include green-button;
+        }
     }
 
 }
