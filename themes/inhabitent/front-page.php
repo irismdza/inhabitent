@@ -53,7 +53,7 @@ get_header(); ?>
                                 <?php the_post_thumbnail('medium'); ?>
                                 </div>
                                 <div class="post-meta-data">
-                                    <p class="post-date"><?php the_date(); ?></p>
+                                    <p class="post-date"><?php the_date(); ?> / <?php comments_number('0 Comments', '1 Comment', '% Comments'); ?></p>
                                     <h3 class="post-title">
                                         <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
                                     </h3>
