@@ -37,6 +37,7 @@ get_header(); ?>
             </div><!-- shop-stuff-links -->
 
             <div class="journal-entry-links">
+                <ul>
                 <?php
                     //global $post;
                     $args = array( 
@@ -47,24 +48,25 @@ get_header(); ?>
                     $postslist = get_posts( $args );
                     foreach ( $postslist as $post ):
                         setup_postdata( $post ); ?> 
-                        <div class="latest-post">
-                            <div class="post-thumbnail">
-                            <?php the_post_thumbnail('medium'); ?>
-                            </div>
-                            <div class="post-meta-data">
-                                <p class="post-date"><?php the_date(); ?></p>
-                                <h3 class="post-title">
-                                    <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
-                                </h3>
-                                <p class="read-entry-link">
-                                    <a href="<?php the_permalink(); ?>">Read Entry</a>
-                                </p>
-                            </div><!--post-meta-data -->                
-                    </div> <!-- a-post-->
+                            <li class="latest-post">
+                                <div class="post-thumbnail">
+                                <?php the_post_thumbnail('medium'); ?>
+                                </div>
+                                <div class="post-meta-data">
+                                    <p class="post-date"><?php the_date(); ?></p>
+                                    <h3 class="post-title">
+                                        <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
+                                    </h3>
+                                    <p>
+                                        <a class="read-entry-link" href="<?php the_permalink(); ?>">Read Entry</a>
+                                    </p>
+                                </div><!--post-meta-data -->                
+                            </li> <!-- latest-post-->
                 <?php
                         endforeach; 
                     wp_reset_postdata();
                 ?>
+                </ul>
             </div> <!-- journal-entry-links -->
         </main><!-- main -->
     </section><!-- #primary -->
