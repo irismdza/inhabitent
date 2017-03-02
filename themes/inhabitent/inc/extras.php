@@ -58,16 +58,21 @@ function inhabitent_about_css() {
 	if ( !is_page_template( 'page-templates/about.php' ) ) {
 		return;
 	}
-	$image = CFS()->get('about_hero_image');
-
+	$image = CFS()->get('about_header_image');
 	if ( !$image ) {
 		return;
 	}
+	
 	$hero_css = ".page-template-about .entry-header {
         background:
             linear-gradient( to bottom, rgba(0,0,0,0.4) 0%, rgba(0,0,0,0.4) 100% ),
             url({$image}) no-repeat center bottom;
-        background-size: cover, cover;
+        background-size: cover, cover;  
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	    height: 100vh;
+        width: 100vw;
 	}";
 	wp_add_inline_style( 'red-starter-style', $hero_css );
 }

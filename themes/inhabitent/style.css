@@ -1259,21 +1259,12 @@ object {
   margin-bottom: 50px; }
 
 /* About page */
-.page-id-40 .entry-header {
-  position: relative;
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.4) 100%);
-  z-index: 2; }
-
 .page-id-40 .entry-title {
   font-family: 'novecento', sans-serif;
   text-transform: uppercase;
   letter-spacing: 2px;
   font-size: 3.2rem;
-  color: white;
-  text-align: center;
-  position: absolute;
-  top: 200px;
-  left: 45vw; }
+  color: white; }
 
 .page-id-40 .content-area {
   width: 750px;
