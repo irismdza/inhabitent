@@ -18,6 +18,7 @@ themes/*
 
 # Ignore packages #
 themes/inhabitent/node_modules/
+themes/inhabitent/.vscode/
 
 # Ignore OS files #
 .DS_Store
