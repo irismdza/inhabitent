@@ -134,10 +134,16 @@ a {
 
 // edited:
 
+
 .main-navigation {
+	.nav-container {
+	display: flex;
+	justify-content: space-between;
+	margin: 0 auto;
+	width: 1120px;
+	padding: .2rem 0;
+	}
 	.menu-main-menu-container {
-		margin: 0 auto;
-		width: 1120px;
 		display: flex;
 		justify-content: flex-end;
 	}
@@ -161,6 +167,38 @@ a {
 	}
 	a:hover {
 		color: $purple;
+	}
+	.logo {
+		background: url('../../images/logos/inhabitent-logo-tent.svg') no-repeat center top;
+		background-size: cover;
+		width: 50px;
+		height: 33px;
+		align-self: center;
+	}
+	.nav-left-menu {
+		display: flex;
+	}
+	.search-form {
+		display: flex;
+		fieldset {
+			border: none;
+			padding: 0;
+			align-self: center;
+		}
+		
+		button.search-submit {
+			display: none;
+		}
+		input {
+			border: none;
+			font-family: 'novecento', sans-serif;
+			text-transform: uppercase;
+			padding: 0;
+			outline: none;
+		}
+		i.fa-search {
+			color: $green;
+		}
 	}
 }
 

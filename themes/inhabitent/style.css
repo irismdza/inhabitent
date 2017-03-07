@@ -543,9 +543,15 @@ a {
   position: fixed;
   top: 0;
   z-index: 10; }
-  .main-navigation .menu-main-menu-container {
+  .main-navigation .nav-container {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: justify;
+        justify-content: space-between;
     margin: 0 auto;
     width: 1120px;
+    padding: .2rem 0; }
+  .main-navigation .menu-main-menu-container {
     display: -ms-flexbox;
     display: flex;
     -ms-flex-pack: end;
@@ -560,6 +566,36 @@ a {
     color: #248A83; }
   .main-navigation a:hover {
     color: #2f1339; }
+  .main-navigation .logo {
+    background: url("../../images/logos/inhabitent-logo-tent.svg") no-repeat center top;
+    background-size: cover;
+    width: 50px;
+    height: 33px;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center; }
+  .main-navigation .nav-left-menu {
+    display: -ms-flexbox;
+    display: flex; }
+  .main-navigation .search-form {
+    display: -ms-flexbox;
+    display: flex; }
+    .main-navigation .search-form fieldset {
+      border: none;
+      padding: 0;
+      -ms-flex-item-align: center;
+          -ms-grid-row-align: center;
+          align-self: center; }
+    .main-navigation .search-form button.search-submit {
+      display: none; }
+    .main-navigation .search-form input {
+      border: none;
+      font-family: 'novecento', sans-serif;
+      text-transform: uppercase;
+      padding: 0;
+      outline: none; }
+    .main-navigation .search-form i.fa-search {
+      color: #248A83; }
 
 /*--------------------------------------------------------------
 # Accessibility
@@ -1498,6 +1534,3 @@ object {
     text-transform: uppercase;
     color: #fff;
     padding: 80px 0 0 0; }
-
-form.search-form {
-  display: none; }
