@@ -185,7 +185,9 @@ a {
 			padding: 0;
 			align-self: center;
 		}
-		
+		label {
+			display: flex;
+		}
 		button.search-submit {
 			display: none;
 		}
@@ -195,9 +197,15 @@ a {
 			text-transform: uppercase;
 			padding: 0;
 			outline: none;
+			background: transparent;
+			margin-left: 1rem;
+		}
+		.search-field {
+			display: none;
 		}
 		i.fa-search {
 			color: $green;
+			margin-left: .5rem;
 		}
 	}
 }

@@ -586,6 +586,9 @@ a {
       -ms-flex-item-align: center;
           -ms-grid-row-align: center;
           align-self: center; }
+    .main-navigation .search-form label {
+      display: -ms-flexbox;
+      display: flex; }
     .main-navigation .search-form button.search-submit {
       display: none; }
     .main-navigation .search-form input {
@@ -593,9 +596,14 @@ a {
       font-family: 'novecento', sans-serif;
       text-transform: uppercase;
       padding: 0;
-      outline: none; }
+      outline: none;
+      background: transparent;
+      margin-left: 1rem; }
+    .main-navigation .search-form .search-field {
+      display: none; }
     .main-navigation .search-form i.fa-search {
-      color: #248A83; }
+      color: #248A83;
+      margin-left: .5rem; }
 
 /*--------------------------------------------------------------
 # Accessibility
