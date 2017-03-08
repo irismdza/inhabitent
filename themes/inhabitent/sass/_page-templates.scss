@@ -2,6 +2,12 @@
 # Page Templates
 --------------------------------------------------------------*/
 
+.clearfix:after {
+    clear: both;
+    content: "";
+    display: table;
+}
+
 /* Front page */
 .page-template-front-page {
     .front-page-hero {
@@ -98,8 +104,106 @@
             }
         }
     }
-}
 
+    .adventures-links {
+        padding-bottom: 5rem;
+        ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            li:first-child {
+                float: left;
+                width: 550px;
+                padding-right: 10px;
+                & img {
+                    height: 540px;
+                    object-fit: cover;
+                    display: block;
+                }
+                & a.post-link {
+                    font-size: 3.1rem;
+                    font-weight: normal;
+                    letter-spacing: 2.5px;
+                    line-height: 4rem;
+                }
+            }
+            li:nth-child(2) {
+                float: right;
+                width: 570px;
+                padding-left: 10px;
+                padding-bottom: 10px;
+                & img {
+                    height: 260px;
+                    object-fit: cover;
+                    display: block;
+                }
+                & a.post-link {
+                    font-size: 2.5rem;
+                    font-weight: normal;
+                    letter-spacing: 2.5px;
+                    line-height: 3rem;
+                }
+            }
+            li:nth-child(3) {
+                float: left;
+                width: 285px;
+                padding-left: 10px;
+                padding-top: 10px;
+                & img {
+                    height: 260px;
+                    object-fit: cover;
+                    display: block;
+                }
+                & a.post-link {
+                    font-size: 1.7rem;
+                    font-weight: normal;
+                    line-height: 2.1rem;
+                }
+            }
+            li:last-child {
+                float: right;
+                width: 285px;
+                padding-left: 10px;
+                padding-top: 10px;
+                & img {
+                    height: 260px;
+                    object-fit: cover;
+                    display: block;
+                }
+                & a.post-link {
+                    font-size: 1.7rem;
+                    font-weight: normal;
+                    line-height: 2.1rem;
+                }
+            }
+            
+            .latest-post {
+                position: relative;
+                .post-meta-data {
+                    position: absolute;
+                    top: 1.5rem;
+                    left: 2.3rem;
+                    .post-title {
+                        font-family: 'merriweather', serif;
+                        a {
+                            color: $white;
+                            &:hover { 
+                                color: $yellow; 
+                            }
+                        }
+                    }
+                    a.read-entry-link {
+                        @include gray-button;
+                        border-color: $white;
+                        color: $white;
+                        &:hover {
+                            @include green-button;
+                        }
+                    }
+                }
+            }
+        }
+    }
 
 /* Shop */
 
@@ -588,4 +692,5 @@
     a.read-more:hover {
         @include green-button;
     }
+}
 }

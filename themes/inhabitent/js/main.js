@@ -1,19 +1,21 @@
 
 (function($) {
-// Change nav bar style on scroll
-   $(window).scroll(function() {
+    // Change nav bar style for Home and About pages
+    $("#site-navigation").addClass('alternate-navigation');
        
-       event.preventDefault();
-            var scroll = $(window).scrollTop();
+    // Change nav bar style on scroll  
+    $(window).scroll(function() {
+    if($(window).scrollTop() < $(window).height()){
+        $("#site-navigation").addClass('alternate-navigation');   
+    }
+    else{
+        $("#site-navigation").removeClass('alternate-navigation');
+    }
+});
 
-            if (scroll >= 1098)
-            $(".site-header").removeClass("reverse-header");
-            else
-            $(".site-header").addClass("reverse-header");
-        });
-
-// Toggle search field
+    // Toggle search field
    $('#toggle-search').on('click', function(event) {       
        $('.search-field').animate( { width: 'toggle' }, 250 );
    });
+
 })(jQuery)

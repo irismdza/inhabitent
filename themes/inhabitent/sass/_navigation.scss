@@ -211,6 +211,9 @@ a {
 }
 
 .alternate-navigation {
+	#primary-menu {
+		background-color: none;
+	}
 	.nav-container {
 	display: flex;
 	justify-content: space-between;

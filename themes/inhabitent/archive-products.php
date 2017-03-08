@@ -19,7 +19,7 @@ get_header(); ?>
 				?>
 			</header><!-- .page-header -->
 
-		<?php  //shop stuff on front page
+		<?php  //taxonomy links
 			$arg = array( 'taxonomy' => 'product_type',
 							'orderby' => 'name',
 							'hide_empty' => true);

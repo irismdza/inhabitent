@@ -72,6 +72,60 @@ get_header(); ?>
                 ?>
                 </ul>
             </div> <!-- journal-entry-links -->
+
+            <div class="adventures-links">
+                <h2>Latest Adventures</h2>
+                <ul class="clearfix">
+                <?php
+                    //global $post;
+                    $args = array( 
+                        'post_type' => 'adventures',
+                        'posts_per_page' => 4, 
+                        'order'=> 'DSC', 
+                        'orderby' => 'post_date' 
+                    );
+                    $postslist = get_posts( $args );
+                    foreach ( $postslist as $post ):
+                        setup_postdata( $post ); ?> 
+                            <li class="latest-post">
+                                <div class="post-thumbnail">
+                                <?php the_post_thumbnail('full'); ?>
+                                </div>
+                                <div class="post-meta-data">
+                                    <h3 class="post-title">
+                                        <a class="post-link" href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
+                                    </h3>
+                                    <p>
+                                        <a class="read-entry-link" href="<?php the_permalink(); ?>">Read Entry</a>
+                                    </p>
+                                </div><!--post-meta-data -->                
+                            </li> <!-- latest-post-->
+                <?php
+                        endforeach; 
+                    wp_reset_postdata();
+                ?>
+                </ul>
+
+
+
+
+
+
+
+                <!--<div class="adventures-outer-wrapper">
+                    <div class="adventures-wrapper-left">
+                        large
+                    </div>
+                    <div class="adventures-wrapper-right">
+                        <div class="adventures-top">
+                            top
+                        </div>
+                        <div class="adventures-bottom">
+                            bottom
+                        </div>
+                    </div>
+                </div>-->
+            </div> <!-- adventures-links -->
         </main><!-- main -->
     </section><!-- #primary -->
 
