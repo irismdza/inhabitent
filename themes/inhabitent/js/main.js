@@ -17,6 +17,6 @@
 console.log('hope')
        
        event.preventDefault();
-       $('.search-field').animate( { width: 'toggle' }, 500 );
+       $('.search-field').animate( { width: 'toggle' }, 250 );
    });
 })(jQuery)

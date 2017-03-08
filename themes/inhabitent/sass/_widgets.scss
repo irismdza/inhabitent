@@ -2,39 +2,41 @@
 # Widgets
 --------------------------------------------------------------*/
 
-.widget {
-	margin: 0 0 $base__space-unit;
-	padding-left: 55px;
-	/* Make sure select elements fit in widgets. */
-	select {
-		max-width: 100%;
-	}
-	.widget-title {
-		font-family: 'novecento', sans-serif;
-		text-transform: uppercase;
-		letter-spacing: 2px;
-	}
-}
-
-/* Search widget */
-.widget_search .search-submit {
+.widget-area {
+	padding: 55px 0 55px 55px;
+	width: 27%;
+	/* Search widget */
+	.widget_search {
 	display: none;
+	}
+	.widget {
+		margin: 0 0 $base__space-unit;
+		padding-bottom: 1rem;
+		/* Make sure select elements fit in widgets. */
+		select {
+			max-width: 100%;
+		}
+	}
+
+	/* Business Hours widget */
+	.business-hours-widget-class {
+		.business-hours-day {
+			font-weight: bold;
+		}
+	}
+
+	/* Archive widget */
+	.widget_archive {
+		ul {
+			margin: 0;
+			padding: 0;
+		}
+		li {
+			list-style-type: none;
+		}
+	}
 }
 
-/* Business Hours widget */
-.business-hours-widget-class {
-	.business-hours-day {
-		font-weight: bold;
+.widget-title, .widgettitle {
+	@include heading-font;
 	}
-}
-
-/* Archive widget */
-.widget_archive {
-	ul {
-		margin: 0;
-		padding: 0;
-	}
-	li {
-		list-style-type: none;
-	}
-}

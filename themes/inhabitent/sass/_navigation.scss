@@ -157,7 +157,7 @@ a {
 	z-index: 10;
 	li {
 		width: auto;
-		margin: .5rem;
+		margin: .5rem .75rem;
 	}
 	a {
 		font-family: 'novecento';
@@ -205,7 +205,7 @@ a {
 		}
 		i.fa-search {
 			color: $green;
-			margin-left: .5rem;
+			margin-left: .75rem;
 		}
 	}
 }

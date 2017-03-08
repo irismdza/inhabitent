@@ -558,7 +558,7 @@ a {
         justify-content: flex-end; }
   .main-navigation li {
     width: auto;
-    margin: .5rem; }
+    margin: .5rem .75rem; }
   .main-navigation a {
     font-family: 'novecento';
     text-decoration: none;
@@ -603,7 +603,7 @@ a {
       display: none; }
     .main-navigation .search-form i.fa-search {
       color: #248A83;
-      margin-left: .5rem; }
+      margin-left: .75rem; }
 
 /*--------------------------------------------------------------
 # Accessibility
@@ -671,32 +671,32 @@ a {
 /*--------------------------------------------------------------
 # Widgets
 --------------------------------------------------------------*/
-.widget {
-  margin: 0 0 1.5rem;
-  padding-left: 55px;
-  /* Make sure select elements fit in widgets. */ }
-  .widget select {
-    max-width: 100%; }
-  .widget .widget-title {
-    font-family: 'novecento', sans-serif;
-    text-transform: uppercase;
-    letter-spacing: 2px; }
+.widget-area {
+  padding: 55px 0 55px 55px;
+  width: 27%;
+  /* Search widget */
+  /* Business Hours widget */
+  /* Archive widget */ }
+  .widget-area .widget_search {
+    display: none; }
+  .widget-area .widget {
+    margin: 0 0 1.5rem;
+    padding-bottom: 1rem;
+    /* Make sure select elements fit in widgets. */ }
+    .widget-area .widget select {
+      max-width: 100%; }
+  .widget-area .business-hours-widget-class .business-hours-day {
+    font-weight: bold; }
+  .widget-area .widget_archive ul {
+    margin: 0;
+    padding: 0; }
+  .widget-area .widget_archive li {
+    list-style-type: none; }
 
-/* Search widget */
-.widget_search .search-submit {
-  display: none; }
-
-/* Business Hours widget */
-.business-hours-widget-class .business-hours-day {
-  font-weight: bold; }
-
-/* Archive widget */
-.widget_archive ul {
-  margin: 0;
-  padding: 0; }
-
-.widget_archive li {
-  list-style-type: none; }
+.widget-title, .widgettitle {
+  font-family: 'novecento', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 2px; }
 
 /*--------------------------------------------------------------
 # Content
@@ -926,14 +926,28 @@ object {
     display: -ms-flexbox;
     display: flex;
     -ms-flex-wrap: wrap;
-        flex-wrap: wrap; }
+        flex-wrap: wrap;
+    -ms-flex-pack: justify;
+        justify-content: space-between;
+    padding: 3rem 0 4rem 0; }
     .post-type-archive-products .site-main .product-grid .type-products {
-      -ms-flex: 1 1 23%;
-          flex: 1 1 23%;
-      overflow: hidden; }
+      -ms-flex: 1 1 25%;
+          flex: 1 1 25%;
+      max-width: 255px; }
+    .post-type-archive-products .site-main .product-grid .product-image-link {
+      display: block;
+      height: 250px; }
     .post-type-archive-products .site-main .product-grid img {
       height: 250px;
-      width: auto; }
+      object-fit: cover; }
+  .post-type-archive-products .site-main .product-text-wrapper {
+    border: 1px solid #e1e1e1;
+    border-top-width: 5px;
+    padding: 13px;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: justify;
+        justify-content: space-between; }
 
 /* Single-Products */
 .single-products .site-main {
@@ -1378,58 +1392,63 @@ object {
   box-shadow: none;
   text-shadow: none; }
 
-.error404 .site-content {
+.error404 .site-content, .search-no-results .site-content {
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
   width: 1120px;
   margin: 0 auto;
   padding-top: 40px; }
 
-.error404 .content-area {
-  width: 750px;
-  padding: 0 55px 175px 0;
+.error404 .content-area, .search-no-results .content-area {
+  width: 73%;
+  padding: 55px 55px 175px 0;
   border-right: 1px solid #e1e1e1; }
+  .error404 .content-area .search-form fieldset, .search-no-results .content-area .search-form fieldset {
+    border: none;
+    padding: 0; }
+    .error404 .content-area .search-form fieldset input[type=search], .search-no-results .content-area .search-form fieldset input[type=search] {
+      border: 1px solid #e1e1e1;
+      border-radius: 0;
+      background-color: #f4f4f4; }
+    .error404 .content-area .search-form fieldset .fa-search, .search-no-results .content-area .search-form fieldset .fa-search {
+      display: none; }
+    .error404 .content-area .search-form fieldset button.search-submit, .search-no-results .content-area .search-form fieldset button.search-submit {
+      display: none; }
 
-.error404 .entry-title {
+.error404 .entry-title, .search-no-results .entry-title {
   font-family: 'novecento', sans-serif;
   text-transform: uppercase;
   letter-spacing: 2px;
   font-size: 2.4rem;
   margin: 0; }
 
-.error404 .entry-content h2 {
+.error404 .entry-content h2, .search-no-results .entry-content h2 {
   font-size: 2.1rem;
   font-family: 'novecento', sans-serif;
   text-transform: uppercase;
   letter-spacing: 2px; }
 
-.error404 .page-title {
+.error404 .page-title, .search-no-results .page-title {
   font-family: 'novecento', sans-serif;
   text-transform: uppercase;
   letter-spacing: 2px;
   font-size: 2.2rem; }
 
-.error404 .search-form fieldset {
-  border: none;
-  padding: 0; }
-  .error404 .search-form fieldset input[type=search] {
-    border: 1px solid #e1e1e1;
-    border-radius: 0;
-    background-color: #f4f4f4; }
-  .error404 .search-form fieldset button.search-submit {
-    display: none; }
-
-.error404 ul {
+.error404 ul, .search-no-results ul {
   list-style: none;
   padding: 0;
   margin: 0; }
 
 .error404 .widget_recent_entries,
 .error404 .widget_categories,
-.error404 .widget_archive {
+.error404 .widget_archive, .search-no-results .widget_recent_entries,
+.search-no-results .widget_categories,
+.search-no-results .widget_archive {
   padding: 0; }
 
-.error404 .widgettitle {
+.error404 .widgettitle, .search-no-results .widgettitle {
   font-family: 'novecento', sans-serif;
   text-transform: uppercase;
   letter-spacing: 2px; }
@@ -1437,23 +1456,26 @@ object {
 .search-results .site-content {
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
   width: 1120px;
   margin: 0 auto;
   padding-top: 40px; }
 
 .search-results .content-area {
-  width: 750px;
-  padding: 0 55px 175px 0;
+  width: 73%;
+  padding: 55px 55px 175px 0;
   border-right: 1px solid #e1e1e1; }
 
 .search-results .entry-title {
   font-family: 'novecento', sans-serif;
   text-transform: uppercase;
   letter-spacing: 2px;
-  font-size: 2.4rem;
+  font-size: 2.1rem;
   margin: 0; }
 
 .search-results .entry-content h2 {
+  margin: 0;
   font-size: 2.1rem;
   font-family: 'novecento', sans-serif;
   text-transform: uppercase;
@@ -1463,7 +1485,11 @@ object {
   font-family: 'novecento', sans-serif;
   text-transform: uppercase;
   letter-spacing: 2px;
-  font-size: 2.2rem; }
+  border-bottom: 1px solid #e1e1e1;
+  font-size: 2.4rem;
+  margin-bottom: 3rem;
+  margin-top: 0;
+  padding-bottom: 1rem; }
 
 .search-results .entry-meta {
   font-family: 'novecento', sans-serif;

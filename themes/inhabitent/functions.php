@@ -90,9 +90,9 @@ function red_starter_scripts() {
 	wp_enqueue_script( 'red-starter-skip-link-focus-fix', get_template_directory_uri() . '/build/js/skip-link-focus-fix.min.js', array(), '20130115', true );
 
 	wp_enqueue_script( 'jquery' );
-	     if ( is_page( 'home' ) || is_page( 'about' ) ) {
+	    //  if ( is_page( 'home' ) || is_page( 'about' ) ) {
 			wp_enqueue_script( 'red_comments', get_template_directory_uri().'/js/main.js', array( 'jquery'), '2.0', true);
-		 }
+		//  }
 		
 
 	wp_localize_script( 'red_comments', 'red_vars', array(
