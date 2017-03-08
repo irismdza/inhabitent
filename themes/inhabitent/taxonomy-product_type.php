@@ -19,14 +19,25 @@ get_header(); ?>
 				?>
 			</header><!-- .page-header -->
 
-			<?php /* Start the Loop */ ?>
-			<?php while ( have_posts() ) : the_post(); ?>
+			<div class="product-grid">
+				<?php /* Start the Loop */ ?>
+				<?php while ( have_posts() ) : the_post(); ?>
 
-				<?php
-					get_template_part( 'template-parts/content' );
-				?>
-
-			<?php endwhile; ?>
+					<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+						<header class="entry-header">
+							<div class="product-image-wrapper">
+								<?php if ( has_post_thumbnail() ) : ?>
+									<a class="product-image-link" href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>"><?php the_post_thumbnail( 'large' ); ?></a>
+								<?php endif; ?>
+							</div>
+							<div class="product-text-wrapper">
+								<?php the_title( sprintf( '<span class="entry-title">', esc_url( get_permalink() ) ), '</span>' ); ?>
+								<span class="product-price"><?php echo CFS()->get('price'); ?></span>
+							</div>
+						</header><!-- .entry-header -->
+					</article><!-- #post-## -->
+					
+				<?php endwhile; ?>
 
 			<?php the_posts_navigation(); ?>
 

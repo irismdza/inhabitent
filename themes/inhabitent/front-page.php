@@ -12,20 +12,22 @@ get_header(); ?>
 
     <section id="primary" class="content-area container">
         <main id="main" class="site-main" role="main">
+            
             <?php  //shop stuff links on front page
                     $arg = array( 'taxonomy' => 'product_type',
                                     'orderby' => 'name',
                                     'hide_empty' => true);
                     $terms = get_terms( $arg );
+
             ?>
             <div class="shop-stuff-links">
-                <!--<h2><?php the_archive_description(); ?></h2>-->
+                <h2>Shop Stuff</h2>
                 <ul>
                     <?php foreach ( $terms as $term ) : ?>
                         <li>
                             <div class="shop-stuff-taxonomy">
                                 <div class="product-icon-image">
-                                    <img src="<?php echo get_template_directory_uri();?>/images/product-type-icons/<?php echo $term->slug; ?>.svg" alt="">
+                                    <img src="<?php echo get_template_directory_uri();?>/images/product-type-icons/<?php echo $term->slug; ?>.svg" alt="Inhabitent Camping Supply">
                                 </div>
                                 <div class="taxonomy-description">
                                     <?php echo term_description( $term ) ?>
@@ -38,6 +40,7 @@ get_header(); ?>
             </div><!-- shop-stuff-links -->
 
             <div class="journal-entry-links">
+                <h2>Inhabitent Journal</h2>
                 <ul>
                 <?php
                     //global $post;

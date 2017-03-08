@@ -14,6 +14,14 @@
         align-content: center;
         width: 100%;
     }
+    h2 {
+        @include heading-font;
+        font-size: 2.3rem;
+        font-weight: normal;
+        color: black;
+        text-align: center;
+        margin-bottom: 3.5rem;
+    }
     .shop-stuff-links {
         margin: 75px 0;
         text-align: center;
@@ -85,6 +93,9 @@
         }
         a.read-entry-link {
             @include gray-button;
+            &:hover {
+                @include green-button;
+            }
         }
     }
 }
@@ -92,7 +103,11 @@
 
 /* Shop */
 
-.post-type-archive-products {
+.post-type-archive-products, .tax-product_type {
+    .site-content {
+        width: $container-width;
+        margin: 0 auto;
+    }
     .site-main {
         text-align: center;
         h1.page-title {
@@ -104,9 +119,8 @@
             list-style: none;
             display: flex;
             justify-content: center;
-            padding: 0 0 50px 0;
             margin: 0;
-            border-bottom: 1px dashed $light_grey;
+            padding: 0;
             @include uppercase-font;
             font-size: 1.2rem;
             li {
@@ -119,6 +133,9 @@
             flex-wrap: wrap;
             justify-content: space-between;
             padding: 3rem 0 4rem 0;
+            border-top: 1px dashed $light_grey;
+            margin-top: 3rem;
+
             .type-products {
                 flex: 1 1 25%;
                 max-width: 255px;
@@ -145,8 +162,9 @@
 
 /* Single-Products */
 .single-products {
-    .site-main {
-        margin-top: 90px;
+    .site-content {
+        margin-top: 50px;
+        padding-top: 3rem;
     }
     .entry-header {
         display: flex;
@@ -416,11 +434,11 @@
         display: flex;
         width: 1120px;
         margin: 0 auto;
-        padding-top: 40px;
+        margin-top: 50px;
     }
     .content-area {
-        width: 750px;
-        padding: 0 55px 175px 0;
+        width: 73%;
+        padding: 3rem 55px 175px 0;
         border-right: 1px solid #e1e1e1;
     }
     .entry-title {

@@ -28,10 +28,9 @@
 				</div><!-- .site-branding -->
 				
 				<nav id="site-navigation" class="main-navigation" role="navigation">
-					<a href="<?php echo home_url(); ?>">	</a>
 					<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html( 'Primary Menu' ); ?></button>
 					<div class="nav-container">
-						<a href="<?php get_home_url(); ?>" class="logo"></a>
+						<a class="logo" href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"></a>
 						<div class="nav-left-menu">
 							<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
 							<?php echo get_search_form(); ?>
