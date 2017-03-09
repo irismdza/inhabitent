@@ -2,7 +2,7 @@
 /**
  * The template for displaying all single posts.
  *
- * @package Inhabitent Theme
+ * @package Inhabitent_Theme
  */
 
 get_header(); ?>

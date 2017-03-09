@@ -2,7 +2,7 @@
 /**
  * Template Name: Home Page
  *
- * @package RED_Starter_Theme
+ * @package Inhabitent_Theme
  */
 
 get_header(); ?>

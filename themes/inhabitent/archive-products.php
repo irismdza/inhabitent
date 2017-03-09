@@ -2,7 +2,7 @@
 /**
  * The template for displaying archive for the products post type (Shop page).
  *
- * @package RED_Starter_Theme
+ * @package Inhabitent_Theme
  */
 
 get_header(); ?>

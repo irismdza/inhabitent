@@ -2,7 +2,7 @@
 /**
  * The template for the front page.
  *
- * @package Inhabitent Theme
+ * @package Inhabitent_Theme
  */
 
 get_header(); ?>

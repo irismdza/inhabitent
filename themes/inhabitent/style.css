@@ -1077,8 +1077,7 @@ object {
     text-transform: uppercase;
     font-size: 1.2rem; }
     .post-type-archive-products .site-main .product-list-style ul li, .tax-product_type .site-main .product-list-style ul li {
-      margin: 0 20px;
-      text-align: center; }
+      margin: 0 20px; }
   .post-type-archive-products .site-main .product-grid, .tax-product_type .site-main .product-grid {
     display: -ms-flexbox;
     display: flex;
@@ -1162,6 +1161,15 @@ object {
     font-size: .9rem;
     padding: 11px 22px;
     border: 1px solid #248A83; }
+
+/*  Archive -- Adventures -- */
+.post-type-archive-adventures .site-content {
+  width: 1120px;
+  margin: 0 auto; }
+
+.post-type-archive-adventures .content-area {
+  display: -ms-flexbox;
+  display: flex; }
 
 /* Archive -- Journal & Month */
 .blog .site-content, .tag .site-content,
