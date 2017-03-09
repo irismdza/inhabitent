@@ -80,7 +80,7 @@
         }
         
         .post-meta-data {
-            @include gray-border;
+            border: $grey-border;
             border-top-width: 5px;
             padding: .75rem;
         }
@@ -281,7 +281,7 @@
 }
 
 
-/* Single-Products */
+/* Single -- Products */
 .single-products {
     .site-content {
         margin-top: 50px;
@@ -324,15 +324,9 @@
 }
 
 
-/* Page Styling for:
-   Journal, Month Archive, Tags, Categories, Single Posts
-*/
-
+/* Archive -- Journal & Month */
 .blog, 
-.archive.date, 
-.tag,
-.category, 
-.single-post {
+.archive.date {
     @include flex-site-content;
     @include content-area;
     @include widget-area;
@@ -378,10 +372,11 @@
     }
 }
 
-/* Journal categories & tags */
+/* Archive -- Categories & Tags */
 .tag,
 .category,
 .single-post {
+    @extend .blog;
     @include social-links;
 }
 
@@ -409,25 +404,38 @@
     }
 }
 
-
-/* Find Us */
-
-.page-id-43 {
+/* Search Results */
+.search-results {
     @include flex-site-content;
     @include content-area;
     @include widget-area;
-    .entry-title {
-        font-family: 'novecento', sans-serif;
-        text-transform: uppercase;
-        letter-spacing: 2px;
-        font-size: 2.4rem;
+    .entry-title, 
+    .entry-content h2 {
+        @include heading-font;
+        font-size: 2.1rem;
         margin: 0;
     }
-    .entry-content h2 {
-        font-size: 2.1rem;
-        font-family: 'novecento', sans-serif;
-        text-transform: uppercase;
-        letter-spacing: 2px;
+    .page-title {
+        @include heading-font;
+        border-bottom: $grey-border;
+        font-size: 2.4rem;
+        margin-bottom: 3rem;
+        padding-bottom: 1rem;
+    }
+    .entry-meta {
+        @include heading-font;
+        letter-spacing: 0px;
+    }
+    a.read-more {
+        @include grey-green-button;
+    }
+}
+
+/* Find Us */
+.page-id-43 {
+    @extend .search-results;
+    .entry-title {
+        font-size: 2.4rem;
     }
     .wpcf7 {
         label {
@@ -445,6 +453,7 @@
             font-family: 'merriweather', serif;
         }
         input[type=submit] {
+            @include grey-green-button;
             color: white;
             font-size: .9rem;
             background-color: $green;
@@ -460,108 +469,36 @@
     }
 }
 
-
-// 404
-
+/* 404 & No Search Results */
 .error404, .search-no-results {
-    .site-content {
-        display: flex;
-        justify-content: space-between;
-        width: 1120px;
-        margin: 0 auto;
-        padding-top: 40px;
-    }
+    @extend .search-results;
     .content-area {
-        width: 73%;
-        padding: 55px 55px 175px 0;
-        border-right: 1px solid #e1e1e1;
         .search-form fieldset {
             border: none;
             padding: 0;
-        input[type=search] {
-            @include gray-border;
-            border-radius: 0;
-            background-color: #f4f4f4;
+            input[type=search] {
+                border: $grey-border;
+                border-radius: 0;
+                background-color: #f4f4f4;
+            }
+            button.search-submit,
+            .fa-search {
+                display: none;
+            }
         }
-        .fa-search {
-            display: none;
-            }   
-        button.search-submit {
-            display: none;
+        ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .widget_recent_entries,
+        .widget_categories,
+        .widget_archive {
+            padding: 0;
+        }
+        .widgettitle {
+            @include heading-font;
         }
     }
-    }
-    .entry-title {
-        font-family: 'novecento', sans-serif;
-        text-transform: uppercase;
-        letter-spacing: 2px;
-        font-size: 2.4rem;
-        margin: 0;
-    }
-    .entry-content h2 {
-        font-size: 2.1rem;
-        font-family: 'novecento', sans-serif;
-        text-transform: uppercase;
-        letter-spacing: 2px;
-    }
-    .page-title {
-        @include heading-font;
-        font-size: 2.2rem;
-    }
-    ul {
-        list-style: none;
-        padding: 0;
-        margin: 0;
-    }
-    .widget_recent_entries,
-    .widget_categories,
-    .widget_archive {
-        padding: 0;
-    }
-    .widgettitle {
-        @include heading-font;
-    }
-}
-
-.search-results {
-    .site-content {
-        display: flex;
-        justify-content: space-between;
-        width: 1120px;
-        margin: 0 auto;
-        padding-top: 40px;
-    }
-    .content-area {
-        width: 73%;
-        padding: 55px 55px 175px 0;
-        border-right: 1px solid #e1e1e1;
-    }
-    .entry-title {
-        @include heading-font;
-        font-size: 2.1rem;
-        margin: 0;
-    }
-    .entry-content h2 {
-        margin: 0;
-        font-size: 2.1rem;
-        @include heading-font;
-    }
-    .page-title {
-        @include heading-font;
-        border-bottom: 1px solid #e1e1e1;
-        font-size: 2.4rem;
-        margin-bottom: 3rem;
-        margin-top: 0;
-        padding-bottom: 1rem;
-    }
-    .entry-meta {
-        @include heading-font;
-        letter-spacing: 0px;
-    }
-    a.read-more {
-        @include grey-button-link;
-    }
-    a.read-more:hover {
-        @include green-button-link;
-    }
+    
 }

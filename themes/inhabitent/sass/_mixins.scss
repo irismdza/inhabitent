@@ -11,46 +11,7 @@
 	margin-right: auto;
 }
 
-
-// Green button links
-@mixin green-button-link {
-	background-color: $green;
-	color: $white;
-	font-family: 'novecento', sans-serif;
-	text-transform: uppercase;
-	font-size: .9rem;
-	padding: 11px 22px;
-	border: 1px solid $green;
-}
-
-// Gray button links
-@mixin grey-button-link {
-	font-family: 'novecento', sans-serif;
-	text-transform: uppercase;
-	font-size: .9rem;
-	padding: 11px 22px;
-	border: 1px solid $color__text-main;
-	color: $color__text-main;
-}
-
-// Light gray border
-@mixin gray-border {
-	border: 1px solid #e1e1e1;
-}
-
-// uppercase
-@mixin uppercase-font {
-	font-family: 'novecento', sans-serif;
-	text-transform: uppercase;
-}
-// Heading font
-@mixin heading-font {
-	font-family: 'novecento', sans-serif;
-	text-transform: uppercase;
-	letter-spacing: 2px;
-}
-
-// Flex site content
+/* Site Content styling for flex content */
 @mixin flex-site-content {
 	.site-content {
 	width: $site-width;
@@ -59,6 +20,7 @@
     }
 }
 
+/* Content Area styling for flex content */
 @mixin content-area {
 	.content-area {
         width: 73%;
@@ -69,6 +31,57 @@
     }
 }
 
+/* Widget Area styling for flex content*/
+@mixin widget-area {
+	.widget-area {
+        margin-top: 33px;
+        padding-top: 75px;
+        i {
+            padding-right: 10px;
+        }
+    }
+	.widget {
+		margin-bottom: 50px;
+	}
+}
+
+/* Font styling */
+// Uppercase font style
+@mixin uppercase-font {
+	font-family: 'novecento', sans-serif;
+	text-transform: uppercase;
+}
+// Heading font style
+@mixin heading-font {
+	font-family: 'novecento', sans-serif;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+}
+
+
+/* Link & Button styling */
+// Green button link
+@mixin green-button-link {
+	background-color: $green;
+	color: $white;
+	font-family: 'novecento', sans-serif;
+	text-transform: uppercase;
+	font-size: .9rem;
+	padding: 11px 22px;
+	border: 1px solid $green;
+}
+
+// Grey button link
+@mixin grey-button-link {
+	font-family: 'novecento', sans-serif;
+	text-transform: uppercase;
+	font-size: .9rem;
+	padding: 11px 22px;
+	border: 1px solid $color__text-main;
+	color: $color__text-main;
+}
+
+// Green button with hover style
 @mixin grey-green-button {
 	@include grey-button-link;
 	margin-right: 5px;
@@ -77,6 +90,7 @@
 	}
 }
 
+// White link with hover style
 @mixin white-yellow-link {
 	color: $white;
 	&:hover {
@@ -84,6 +98,7 @@
 	}
 }
 
+// Social links styling
 @mixin social-links {
 	.product-social-links {
         display: flex;
@@ -98,17 +113,4 @@
     .cat-links {
         margin-right: 1.5rem;
     }
-}
-// Widget area
-@mixin widget-area {
-	.widget-area {
-        margin-top: 33px;
-        padding-top: 75px;
-        i {
-            padding-right: 10px;
-        }
-    }
-	.widget {
-		margin-bottom: 50px;
-	}
 }
