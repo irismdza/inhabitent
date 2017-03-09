@@ -13,7 +13,7 @@
 
 
 // Green button links
-@mixin green-button {
+@mixin green-button-link {
 	background-color: $green;
 	color: $white;
 	font-family: 'novecento', sans-serif;
@@ -24,7 +24,7 @@
 }
 
 // Gray button links
-@mixin gray-button {
+@mixin grey-button-link {
 	font-family: 'novecento', sans-serif;
 	text-transform: uppercase;
 	font-size: .9rem;
@@ -53,16 +53,52 @@
 // Flex site content
 @mixin flex-site-content {
 	.site-content {
-	width: 1120px;
+	width: $site-width;
     margin: 0 auto;
     display: flex;
     }
-	.post,
+}
+
+@mixin content-area {
 	.content-area {
-	width: 750px;
+        width: 73%;
+        padding: 3rem 3rem 4rem 0;
+        border-right: $grey_border;
+        margin-top: 50px;
+        padding: 3rem 3rem 4rem 0;
     }
 }
 
+@mixin grey-green-button {
+	@include grey-button-link;
+	margin-right: 5px;
+	&:hover {
+		@include green-button-link;
+	}
+}
+
+@mixin white-yellow-link {
+	color: $white;
+	&:hover {
+		color: $yellow;
+	}
+}
+
+@mixin social-links {
+	.product-social-links {
+        display: flex;
+        a {
+            @include grey-green-button;
+        }
+    }
+    .entry-footer {
+        @include heading-font;
+        letter-spacing: 0;
+    }
+    .cat-links {
+        margin-right: 1.5rem;
+    }
+}
 // Widget area
 @mixin widget-area {
 	.widget-area {

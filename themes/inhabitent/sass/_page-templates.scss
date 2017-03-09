@@ -36,7 +36,7 @@
             height: 70px;
         }
         a {
-            @include green-button;
+            @include green-button-link;
         }
         a:hover {
             background-color: #19625d;
@@ -93,9 +93,9 @@
             margin: 25px 0 10px 0;
         }
         a.read-entry-link {
-            @include gray-button;
+            @include grey-button-link;
             &:hover {
-                @include green-button;
+                @include green-button-link;
             }
         }
     }
@@ -201,18 +201,18 @@
                         }
                     }
                     a.read-entry-link {
-                        @include gray-button;
+                        @include grey-button-link;
                         border-color: $white;
                         color: $white;
                         &:hover {
-                            @include green-button;
+                            @include green-button-link;
                         }
                     }
                 }
             }
         }
         a.adventures-archive-link {
-            @include green-button;
+            @include green-button-link;
             font-size: 1.2rem;
             &:hover {
                 background-color: #19625d;
@@ -226,7 +226,7 @@
 
 .post-type-archive-products, .tax-product_type {
     .site-content {
-        width: $container-width;
+        width: $site-width;
         margin: 0 auto;
     }
     .site-main {
@@ -313,250 +313,77 @@
     .product-social-links {
         display: flex;
         a {
-            @include gray-button;
+            @include grey-button-link;
             margin-right: 5px;
         }
         a:hover {
-            @include green-button;
+            @include green-button-link;
         }
     }
 
 }
 
 
-/* Journal */
-.blog, .archive.date {
+/* Page Styling for:
+   Journal, Month Archive, Tags, Categories, Single Posts
+*/
+
+.blog, 
+.archive.date, 
+.tag,
+.category, 
+.single-post {
     @include flex-site-content;
-    .site-content {
-        display: flex;
-        width: 1120px;
-        margin: 0 auto;
-    }
-    .content-area {
-        width: 73%;
-        padding: 3rem 55px 175px 0;
-        border-right: 1px solid #e1e1e1;
-    }
-    .page-title {
-        display: none;
-    }
-    .content-area {
-        @include gray-border;
-        border-top: 0;
-        border-left: 0;
-        margin-top: 50px;
-        padding: 3rem 55px 55px 0;
-    }
+    @include content-area;
+    @include widget-area;
     .entry-header{
         position: relative;
         img {
             width: 100%;
         }
-    }
-    .entry-title {
-        @include heading-font;
-        background-color: $green;
-        font-size: 2.1rem;
-        text-align: left;
-        line-height: 2.5rem;
-        position: absolute;
-        top: 10px;
-        max-width: 75%;
-        padding: .9rem 1.5rem;
         a {
+            @include white-yellow-link;
+        }
+        .entry-title {
+            @include heading-font;
+            background-color: $green;
+            font-size: 2.1rem;
+            text-align: left;
+            line-height: 2.5rem;
+            position: absolute;
+            top: 10px;
+            max-width: 75%;
+            padding: .9rem 1.5rem;
             color: $white;
-            &:hover {
-                color: $yellow;
-            }
+        }
+        .entry-meta {
+            @include uppercase-font;
+            background-color: $green;
+            font-size: 1rem;
+            color: $white;
+            text-align: right;
+            position: absolute;
+            right: 0px;
+            bottom: .5rem;
+            padding: .2rem 1.5rem;
         }
     }
-    .entry-meta {
-        @include uppercase-font;
-        background-color: $green;
-        font-size: 1rem;
-        color: $white;
-        text-align: right;
-        position: absolute;
-        right: 0px;
-        bottom: .5rem;
-        padding: .2rem 1.5rem;
-    }
     .entry-content {
-        .BodyA {
+        .BodyA p {
             line-height: 2rem;
         }
     }
     a.read-more {
-        @include gray-button;
+        @include grey-green-button;
     }
-    a.read-more:hover {
-        @include green-button;
-    }
-    @include widget-area
 }
 
 /* Journal categories & tags */
 .tag,
-.category {
-    @include flex-site-content;
-    .content-area {
-        @include gray-border;
-        border-top: 0;
-        border-left: 0;
-        margin-top: 50px;
-    }
-    .content-area {
-        width: 73%;
-        padding: 3rem 55px 175px 0;
-        border-right: 1px solid #e1e1e1;
-    }
-    .entry-title {
-        font-family: 'novecento', sans-serif;
-        text-transform: uppercase;
-        letter-spacing: 2px;
-        font-size: 2.4rem;
-        margin: 0;
-    }
-    .page-header {
-        margin-bottom: 50px;
-        border-bottom: 1px solid #e1e1e1;
-    }
-    .page-title {
-        @include heading-font;
-        font-size: 2.4rem;
-        margin: 0;
-    }
-    .entry-header{
-        position: relative;
-        img {
-            width: 100%;
-        }
-    }
-    .entry-title {
-        @include heading-font;
-        color: $white;
-        background-color: $green;
-        font-size: 2.1rem;
-        text-align: left;
-        line-height: 2.5rem;
-        position: absolute;
-        top: 10px;
-        max-width: 75%;
-        padding: .9rem 1.5rem;
-        a {
-            color: $white;
-        }
-    }
-    .entry-meta {
-        @include uppercase-font;
-        background-color: $green;
-        font-size: 1rem;
-        color: $white;
-        text-align: right;
-        position: absolute;
-        right: 0px;
-        bottom: .5rem;
-        padding: .2rem 1.5rem;
-    }
-    .product-social-links {
-        display: flex;
-    }
-    .product-social-links a {
-        @include gray-button;
-        margin-right: 5px;
-    }
-    .product-social-links a:hover {
-        @include green-button;
-    }
-    .entry-footer {
-        @include heading-font;
-        letter-spacing: 0;
-    }
-    .cat-links {
-        margin-right: 1.5rem;
-    }
-    a.read-more {
-        @include gray-button;
-    }
-    a.read-more:hover {
-        @include green-button;
-    }
-    @include widget-area;
-}
-
-/* Journal single */
+.category,
 .single-post {
-    @include flex-site-content;
-    .content-area {
-        @include gray-border;
-        border-top: 0;
-        border-left: 0;
-        margin-top: 50px;
-    }
-    .content-area {
-        width: 73%;
-        padding: 3rem 55px 175px 0;
-        border-right: 1px solid #e1e1e1;
-    }
-    .entry-title {
-        font-family: 'novecento', sans-serif;
-        text-transform: uppercase;
-        letter-spacing: 2px;
-        font-size: 2.4rem;
-        margin: 0;
-    }
-    .entry-header{
-        position: relative;
-        img {
-            width: 100%;
-        }
-    }
-    .entry-title {
-        @include heading-font;
-        color: $white;
-        background-color: $green;
-        font-size: 2.1rem;
-        text-align: left;
-        line-height: 2.5rem;
-        position: absolute;
-        top: 10px;
-        max-width: 75%;
-        padding: .9rem 1.5rem;
-        a {
-            color: $white;
-        }
-    }
-    .entry-meta {
-        @include uppercase-font;
-        background-color: $green;
-        font-size: 1rem;
-        color: $white;
-        text-align: right;
-        position: absolute;
-        right: 0px;
-        bottom: .5rem;
-        padding: .2rem 1.5rem;
-    }
-    .product-social-links {
-        display: flex;
-    }
-    .product-social-links a {
-        @include gray-button;
-        margin-right: 5px;
-    }
-    .product-social-links a:hover {
-        @include green-button;
-    }
-    .entry-footer {
-        @include heading-font;
-        letter-spacing: 0;
-    }
-    .cat-links {
-        margin-right: 1.5rem;
-    }
-    @include widget-area;
+    @include social-links;
 }
-
 
 /* About page */
 .page-id-40 {
@@ -586,17 +413,9 @@
 /* Find Us */
 
 .page-id-43 {
-    .site-content {
-        display: flex;
-        width: 1120px;
-        margin: 0 auto;
-        margin-top: 50px;
-    }
-    .content-area {
-        width: 73%;
-        padding: 3rem 55px 175px 0;
-        border-right: 1px solid #e1e1e1;
-    }
+    @include flex-site-content;
+    @include content-area;
+    @include widget-area;
     .entry-title {
         font-family: 'novecento', sans-serif;
         text-transform: uppercase;
@@ -612,22 +431,20 @@
     }
     .wpcf7 {
         label {
-            font-family: 'novecento', sans-serif;
+            @include uppercase-font;
+            display: block;
             font-size: 1.1rem;
-            text-transform: uppercase;
-            margin-bottom: .3rem;
+            margin-bottom: .5rem;
         }
         input[type=text],
         input[type=email],
         textarea {
             background-color: #f4f4f4;
-            border: 1px solid #e1e1e1;
+            border: $grey-border;
             border-radius: 0;
             font-family: 'merriweather', serif;
         }
         input[type=submit] {
-            font-family: 'novecento', sans-serif;
-            text-transform: uppercase;
             color: white;
             font-size: .9rem;
             background-color: $green;
@@ -742,9 +559,9 @@
         letter-spacing: 0px;
     }
     a.read-more {
-        @include gray-button;
+        @include grey-button-link;
     }
     a.read-more:hover {
-        @include green-button;
+        @include green-button-link;
     }
 }
