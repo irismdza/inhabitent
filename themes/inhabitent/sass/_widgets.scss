@@ -25,6 +25,29 @@
 		}
 	}
 
+	/* Inhabitent Contact Info widget */
+	.inhabitent-contact-info-class {
+		.contact-phone,
+		.contact-email,
+		.contact-address {
+			display: flex;
+		}
+		div.contact-email {
+			margin: 1rem 0;
+		}
+		.contact-address p {
+			&:first-child {
+				margin: 0;
+			}
+			&:last-child {
+				margin-top: 0;
+			}
+		}
+		.contact-info-icon {
+			width: 30px;
+		}
+	}
+
 	/* Archive widget */
 	.widget_archive {
 		ul {
