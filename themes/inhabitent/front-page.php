@@ -105,26 +105,7 @@ get_header(); ?>
                     wp_reset_postdata();
                 ?>
                 </ul>
-
-
-
-
-
-
-
-                <!--<div class="adventures-outer-wrapper">
-                    <div class="adventures-wrapper-left">
-                        large
-                    </div>
-                    <div class="adventures-wrapper-right">
-                        <div class="adventures-top">
-                            top
-                        </div>
-                        <div class="adventures-bottom">
-                            bottom
-                        </div>
-                    </div>
-                </div>-->
+                <a class="adventures-archive-link" href="<?php echo get_post_type_archive_link( 'adventures' ); ?>">More Adventures</a>
             </div> <!-- adventures-links -->
         </main><!-- main -->
     </section><!-- #primary -->

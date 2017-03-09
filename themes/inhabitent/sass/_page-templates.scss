@@ -2,12 +2,6 @@
 # Page Templates
 --------------------------------------------------------------*/
 
-.clearfix:after {
-    clear: both;
-    content: "";
-    display: table;
-}
-
 /* Front page */
 .page-template-front-page {
     .front-page-hero {
@@ -59,16 +53,16 @@
         }
     }
     .journal-entry-links {
+        padding-bottom: 3rem;
         ul {
         display: flex;
+        justify-content: space-between;
         margin: 0;
         padding: 0;
         }
         li {
             list-style: none;
-            margin: 0 10px;
-            padding: 0;
-            flex: 0 0 33%;
+            flex: 0 0 32%;
         }
         .post-thumbnail {
             height: 250px;
@@ -93,6 +87,7 @@
         img {
             width: 100%;
             height: 250px;
+            object-fit: cover;
         }
         p {
             margin: 25px 0 10px 0;
@@ -109,7 +104,7 @@
         padding-bottom: 5rem;
         ul {
             list-style: none;
-            padding: 0;
+            padding: 0 0 40px 0;
             margin: 0;
             li:first-child {
                 float: left;
@@ -203,7 +198,16 @@
                 }
             }
         }
+        a.adventures-archive-link {
+            @include green-button;
+            font-size: 1.2rem;
+            &:hover {
+                background-color: #19625d;
+                border-color: #19625d;
+            }
+        }
     }
+}
 
 /* Shop */
 
@@ -308,8 +312,18 @@
 
 
 /* Journal */
-.blog {
+.blog, .archive.date {
     @include flex-site-content;
+    .site-content {
+        display: flex;
+        width: 1120px;
+        margin: 0 auto;
+    }
+    .content-area {
+        width: 73%;
+        padding: 3rem 55px 175px 0;
+        border-right: 1px solid #e1e1e1;
+    }
     .page-title {
         display: none;
     }
@@ -317,8 +331,8 @@
         @include gray-border;
         border-top: 0;
         border-left: 0;
-        margin-top: 33px;
-        padding: 75px 55px 55px 0;
+        margin-top: 50px;
+        padding: 3rem 55px 55px 0;
     }
     .entry-header{
         position: relative;
@@ -338,6 +352,9 @@
         padding: .9rem 1.5rem;
         a {
             color: $white;
+            &:hover {
+                color: $yellow;
+            }
         }
     }
     .entry-meta {
@@ -373,8 +390,19 @@
         @include gray-border;
         border-top: 0;
         border-left: 0;
-        margin-top: 33px;
-        padding: 75px 55px 55px 0;
+        margin-top: 50px;
+    }
+    .content-area {
+        width: 73%;
+        padding: 3rem 55px 175px 0;
+        border-right: 1px solid #e1e1e1;
+    }
+    .entry-title {
+        font-family: 'novecento', sans-serif;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        font-size: 2.4rem;
+        margin: 0;
     }
     .page-header {
         margin-bottom: 50px;
@@ -450,8 +478,19 @@
         @include gray-border;
         border-top: 0;
         border-left: 0;
-        margin-top: 33px;
-        padding: 75px 55px 55px 0;
+        margin-top: 50px;
+    }
+    .content-area {
+        width: 73%;
+        padding: 3rem 55px 175px 0;
+        border-right: 1px solid #e1e1e1;
+    }
+    .entry-title {
+        font-family: 'novecento', sans-serif;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        font-size: 2.4rem;
+        margin: 0;
     }
     .entry-header{
         position: relative;
@@ -692,5 +731,4 @@
     a.read-more:hover {
         @include green-button;
     }
-}
 }
