@@ -994,6 +994,12 @@ object {
     list-style: none;
     padding: 0 0 40px 0;
     margin: 0; }
+    .page-template-front-page .adventures-links ul li {
+      position: relative; }
+    .page-template-front-page .adventures-links ul .post-thumbnail {
+      background: linear-gradient(to bottom, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.4) 100%);
+      background-size: cover;
+      z-index: 100000; }
     .page-template-front-page .adventures-links ul li:first-child {
       float: left;
       width: 550px;
