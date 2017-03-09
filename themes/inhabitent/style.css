@@ -1504,15 +1504,15 @@ object {
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    padding-top: 60px; }
+    padding-top: 60px;
+    color: #fff; }
     .footer-inhabitent .footer-container .footer-contact,
     .footer-inhabitent .footer-container .footer-hours {
       -ms-flex: 1 0 25%;
-          flex: 1 0 25%;
-      color: #fff; }
+          flex: 1 0 25%; }
       .footer-inhabitent .footer-container .footer-contact h3,
       .footer-inhabitent .footer-container .footer-hours h3 {
-        font-family: 'novecento', serif;
+        font-family: 'novecento', sans-serif;
         text-transform: uppercase;
         letter-spacing: 2px;
         font-size: 1.2rem;
@@ -1524,16 +1524,16 @@ object {
       .footer-inhabitent .footer-container .footer-contact a,
       .footer-inhabitent .footer-container .footer-hours a {
         color: #fff; }
-      .footer-inhabitent .footer-container .footer-contact a:hover,
-      .footer-inhabitent .footer-container .footer-hours a:hover {
-        text-decoration: underline; }
-      .footer-inhabitent .footer-container .footer-contact .day-of-week,
-      .footer-inhabitent .footer-container .footer-hours .day-of-week {
-        font-weight: bold; }
+        .footer-inhabitent .footer-container .footer-contact a:hover,
+        .footer-inhabitent .footer-container .footer-hours a:hover {
+          text-decoration: underline; }
       .footer-inhabitent .footer-container .footer-contact i,
       .footer-inhabitent .footer-container .footer-hours i {
         font-size: 1.3rem;
         margin-right: 6px; }
+      .footer-inhabitent .footer-container .footer-contact .day-of-week,
+      .footer-inhabitent .footer-container .footer-hours .day-of-week {
+        font-weight: bold; }
     .footer-inhabitent .footer-container .footer-logo {
       -ms-flex: 1 0 50%;
           flex: 1 0 50%;
@@ -1546,5 +1546,4 @@ object {
     text-align: center;
     font-family: 'novecento', sans-serif;
     text-transform: uppercase;
-    color: #fff;
     padding: 60px 0 0 0; }
