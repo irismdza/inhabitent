@@ -185,7 +185,7 @@ a {
 		label {
 			display: flex;
 		}
-		button.search-submit {
+		button.search-submit, .search-field {
 			display: none;
 		}
 		input {
@@ -195,9 +195,6 @@ a {
 			outline: none;
 			background: transparent;
 			margin-left: 1rem;
-		}
-		.search-field {
-			display: none;
 		}
 		i.fa-search {
 			color: $green;

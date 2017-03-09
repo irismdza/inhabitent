@@ -22,6 +22,7 @@
         text-align: center;
         margin-bottom: 3.5rem;
     }
+    // shop stuff section
     .shop-stuff-links {
         margin: 75px 0;
         text-align: center;
@@ -52,6 +53,7 @@
             border-color: $orange;
         }
     }
+    // latest posts section
     .journal-entry-links {
         padding-bottom: 3rem;
         ul {
@@ -99,7 +101,7 @@
             }
         }
     }
-
+    // latest adventures section
     .adventures-links {
         padding-bottom: 5rem;
         ul {
@@ -110,13 +112,14 @@
                 position: relative;
                 & img {
                     position: relative;
+                    object-fit: cover;
+                    display: block;
                     z-index: -1;
                 }
             }
             .post-thumbnail {
                 background: linear-gradient( to bottom, rgba(0,0,0,0.4) 0%, rgba(0,0,0,0.4) 100% );
                 background-size: cover;
-                z-index: 100000;
             }
             li:first-child {
                 float: left;
@@ -124,8 +127,8 @@
                 padding-right: 10px;
                 & img {
                     height: 540px;
-                    object-fit: cover;
-                    display: block;
+                    // object-fit: cover;
+                    // display: block;
                 }
                 & a.post-link {
                     font-size: 3.1rem;
@@ -141,8 +144,8 @@
                 padding-bottom: 10px;
                 & img {
                     height: 260px;
-                    object-fit: cover;
-                    display: block;
+                    // object-fit: cover;
+                    // display: block;
                 }
                 & a.post-link {
                     font-size: 2.5rem;
@@ -157,8 +160,8 @@
                 padding: 10px 10px 0 10px;
                 & img {
                     height: 260px;
-                    object-fit: cover;
-                    display: block;
+                    // object-fit: cover;
+                    // display: block;
                 }
                 & a.post-link {
                     font-size: 1.7rem;
@@ -174,8 +177,8 @@
                 padding-top: 10px;
                 & img {
                     height: 260px;
-                    object-fit: cover;
-                    display: block;
+                    // object-fit: cover;
+                    // display: block;
                 }
                 & a.post-link {
                     font-size: 1.7rem;
@@ -417,7 +420,7 @@
         @include heading-font;
         border-bottom: $grey-border;
         font-size: 2.4rem;
-        margin-bottom: 3rem;
+        margin: 0 0 3rem 0;
         padding-bottom: 1rem;
     }
     .entry-meta {
