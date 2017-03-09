@@ -637,6 +637,9 @@
             box-shadow: none;
             text-shadow: none;
         }
+        .required {
+            color: $orange;
+        }
     }
 }
 

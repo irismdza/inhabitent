@@ -1651,6 +1651,9 @@ object {
   box-shadow: none;
   text-shadow: none; }
 
+.page-id-43 .wpcf7 .required {
+  color: #d99054; }
+
 .error404 .site-content, .search-no-results .site-content {
   display: -ms-flexbox;
   display: flex;
