@@ -613,7 +613,7 @@ a {
       justify-content: flex-end;
   background-color: transparent;
   border-bottom: none;
-  position: fixed;
+  position: absolute;
   top: 0;
   z-index: 10; }
   .alternate-navigation #primary-menu {
