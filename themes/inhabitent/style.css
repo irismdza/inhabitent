@@ -996,6 +996,9 @@ object {
     margin: 0; }
     .page-template-front-page .adventures-links ul li {
       position: relative; }
+      .page-template-front-page .adventures-links ul li img {
+        position: relative;
+        z-index: -1; }
     .page-template-front-page .adventures-links ul .post-thumbnail {
       background: linear-gradient(to bottom, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.4) 100%);
       background-size: cover;
@@ -1039,7 +1042,8 @@ object {
       .page-template-front-page .adventures-links ul li:nth-child(3) a.post-link {
         font-size: 1.7rem;
         font-weight: normal;
-        line-height: 2.1rem; }
+        line-height: 2.1rem;
+        letter-spacing: 2.5px; }
     .page-template-front-page .adventures-links ul li:last-child {
       float: right;
       width: 285px;
@@ -1052,7 +1056,8 @@ object {
       .page-template-front-page .adventures-links ul li:last-child a.post-link {
         font-size: 1.7rem;
         font-weight: normal;
-        line-height: 2.1rem; }
+        line-height: 2.1rem;
+        letter-spacing: 2.5px; }
     .page-template-front-page .adventures-links ul .latest-post {
       position: relative; }
       .page-template-front-page .adventures-links ul .latest-post .post-meta-data {

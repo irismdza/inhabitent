@@ -108,6 +108,10 @@
             margin: 0;
             li {
                 position: relative;
+                & img {
+                    position: relative;
+                    z-index: -1;
+                }
             }
             .post-thumbnail {
                 background: linear-gradient( to bottom, rgba(0,0,0,0.4) 0%, rgba(0,0,0,0.4) 100% );
@@ -161,6 +165,7 @@
                     font-size: 1.7rem;
                     font-weight: normal;
                     line-height: 2.1rem;
+                    letter-spacing: 2.5px;
                 }
             }
             li:last-child {
@@ -177,6 +182,7 @@
                     font-size: 1.7rem;
                     font-weight: normal;
                     line-height: 2.1rem;
+                    letter-spacing: 2.5px;
                 }
             }
             
