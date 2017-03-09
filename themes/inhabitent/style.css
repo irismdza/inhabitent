@@ -45,7 +45,6 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 --------------------------------------------------------------*/
 /* Site Content styling for flex content */
 /* Content Area styling for flex content */
-/* Widget Area styling for flex content*/
 /* Font styling */
 /* Link & Button styling */
 html {
@@ -695,7 +694,8 @@ a {
 # Widgets
 --------------------------------------------------------------*/
 .widget-area {
-  padding: 55px 0 55px 55px;
+  margin-top: 50px;
+  padding: 3rem 0 3rem 3rem;
   width: 27%;
   /* Search widget */
   /* Business Hours widget */
@@ -709,6 +709,11 @@ a {
     /* Make sure select elements fit in widgets. */ }
     .widget-area .widget select {
       max-width: 100%; }
+  .widget-area .widget-title, .widget-area .widgettitle {
+    font-family: 'novecento', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-top: 0; }
   .widget-area .business-hours-widget-class .business-hours-day {
     font-weight: bold; }
   .widget-area .inhabitent-contact-info-class .contact-phone,
@@ -729,11 +734,6 @@ a {
     padding: 0; }
   .widget-area .widget_archive li {
     list-style-type: none; }
-
-.widget-title, .widgettitle {
-  font-family: 'novecento', sans-serif;
-  text-transform: uppercase;
-  letter-spacing: 2px; }
 
 /*--------------------------------------------------------------
 # Content
@@ -1192,24 +1192,6 @@ object {
   margin-top: 50px;
   padding: 3rem 3rem 4rem 0; }
 
-.blog .widget-area, .tag .widget-area,
-.category .widget-area,
-.single-post .widget-area,
-.archive.date .widget-area {
-  margin-top: 33px;
-  padding-top: 75px; }
-  .blog .widget-area i, .tag .widget-area i,
-  .category .widget-area i,
-  .single-post .widget-area i,
-  .archive.date .widget-area i {
-    padding-right: 10px; }
-
-.blog .widget, .tag .widget,
-.category .widget,
-.single-post .widget,
-.archive.date .widget {
-  margin-bottom: 50px; }
-
 .blog .entry-header, .tag .entry-header,
 .category .entry-header,
 .single-post .entry-header,
@@ -1367,15 +1349,6 @@ object {
   border-right: 1px solid #e1e1e1;
   margin-top: 50px;
   padding: 3rem 3rem 4rem 0; }
-
-.search-results .widget-area, .page-id-43 .widget-area, .error404 .widget-area, .search-no-results .widget-area {
-  margin-top: 33px;
-  padding-top: 75px; }
-  .search-results .widget-area i, .page-id-43 .widget-area i, .error404 .widget-area i, .search-no-results .widget-area i {
-    padding-right: 10px; }
-
-.search-results .widget, .page-id-43 .widget, .error404 .widget, .search-no-results .widget {
-  margin-bottom: 50px; }
 
 .search-results .entry-title, .page-id-43 .entry-title, .error404 .entry-title, .search-no-results .entry-title,
 .search-results .entry-content h2, .page-id-43 .entry-content h2, .error404 .entry-content h2, .search-no-results .entry-content h2 {

@@ -31,20 +31,6 @@
     }
 }
 
-/* Widget Area styling for flex content*/
-@mixin widget-area {
-	.widget-area {
-        margin-top: 33px;
-        padding-top: 75px;
-        i {
-            padding-right: 10px;
-        }
-    }
-	.widget {
-		margin-bottom: 50px;
-	}
-}
-
 /* Font styling */
 // Uppercase font style
 @mixin uppercase-font {

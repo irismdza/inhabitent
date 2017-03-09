@@ -329,7 +329,6 @@
 .archive.date {
     @include flex-site-content;
     @include content-area;
-    @include widget-area;
     .entry-header{
         position: relative;
         img {
@@ -408,7 +407,6 @@
 .search-results {
     @include flex-site-content;
     @include content-area;
-    @include widget-area;
     .entry-title, 
     .entry-content h2 {
         @include heading-font;
