@@ -132,41 +132,38 @@ a {
 }
 
 
-// edited:
-
-
+/* white navigation bar */
 .main-navigation {
-	.nav-container {
+	width: 100%;
 	display: flex;
-	justify-content: space-between;
-	margin: 0 auto;
-	width: 1120px;
-	padding: .2rem 0;
+	justify-content: flex-end;
+	background-color: hsla(0,0%,100%,.85);
+	border-bottom: $grey-border;
+	position: fixed;
+	top: 0;
+	z-index: 10;
+	.nav-container {
+		display: flex;
+		justify-content: space-between;
+		margin: 0 auto;
+		width: $site-width;
+		padding: .2rem 0;
 	}
 	.menu-main-menu-container {
 		display: flex;
 		justify-content: flex-end;
 	}
-	margin: 0 auto;
-	display: flex;
-	justify-content: flex-end;
-	background-color: hsla(0,0%,100%,.85);
-	border-bottom: 1px solid #e1e1e1;
-	position: fixed;
-	top: 0;
-	z-index: 10;
 	li {
 		width: auto;
 		margin: .5rem .75rem;
 	}
 	a {
-		font-family: 'novecento';
+		@include uppercase-font;
 		text-decoration: none;
-		text-transform: uppercase;
 		color: $green;
-	}
-	a:hover {
-		color: $purple;
+		&:hover {
+			color: $purple;
+		}
 	}
 	.logo {
 		background: url('../../images/logos/inhabitent-logo-tent.svg') no-repeat center top;
@@ -192,9 +189,8 @@ a {
 			display: none;
 		}
 		input {
+			@include uppercase-font;
 			border: none;
-			font-family: 'novecento', sans-serif;
-			text-transform: uppercase;
 			padding: 0;
 			outline: none;
 			background: transparent;
@@ -210,83 +206,21 @@ a {
 	}
 }
 
+/* transparent navigation bar */
 .alternate-navigation {
-	#primary-menu {
-		background-color: none;
-	}
-	.nav-container {
-	display: flex;
-	justify-content: space-between;
-	margin: 0 auto;
-	width: 1120px;
-	padding: .2rem 0;
-	}
-	.menu-main-menu-container {
-		display: flex;
-		justify-content: flex-end;
-	}
-	margin: 0 auto;
-	display: flex;
-	justify-content: flex-end;
+	@extend .main-navigation;
 	background-color: transparent;
 	border-bottom: none;
 	position: absolute;
-	top: 0;
-	z-index: 10;
-	li {
-		width: auto;
-		margin: .5rem .75rem;
-	}
 	a {
-		font-family: 'novecento';
-		text-decoration: none;
-		text-transform: uppercase;
-		color: $white;
-	}
-	a:hover {
-		color: $yellow;
+		@include white-yellow-link;
 	}
 	.logo {
 		background: url('../../images/logos/inhabitent-logo-tent-white.svg') no-repeat center top;
-		background-size: cover;
-		width: 50px;
-		height: 33px;
-		align-self: center;
-	}
-	.nav-left-menu {
-		display: flex;
 	}
 	.search-form {
-		display: flex;
-		fieldset {
-			border: none;
-			padding: 0;
-			align-self: center;
-		}
-		label {
-			display: flex;
-		}
-		button.search-submit {
-			display: none;
-		}
-		input {
-			border: none;
-			font-family: 'novecento', sans-serif;
-			text-transform: uppercase;
-			padding: 0;
-			outline: none;
-			background: transparent;
-			margin-left: 1rem;
-		}
-		.search-field {
-			display: none;
-		}
 		i.fa-search {
-			color: $white;
-			margin-left: .75rem;
-			&:hover {
-				color: $yellow;
-			}
+			@include white-yellow-link;
 		}
 	}
 }

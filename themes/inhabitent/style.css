@@ -467,50 +467,50 @@ a {
     outline: 0; }
 
 /* Menus */
-.main-navigation {
+.main-navigation, .alternate-navigation {
   clear: both;
   display: block;
   float: left;
   width: 100%; }
-  .main-navigation ul {
+  .main-navigation ul, .alternate-navigation ul {
     display: none;
     list-style: none;
     margin: 0;
     padding-left: 0; }
-    .main-navigation ul ul {
+    .main-navigation ul ul, .alternate-navigation ul ul {
       box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
       float: left;
       position: absolute;
       top: 1.5rem;
       left: -999rem;
       z-index: 99999; }
-      .main-navigation ul ul ul {
+      .main-navigation ul ul ul, .alternate-navigation ul ul ul {
         left: -999rem;
         top: 0; }
-      .main-navigation ul ul li:hover > ul,
-      .main-navigation ul ul li.focus > ul {
+      .main-navigation ul ul li:hover > ul, .alternate-navigation ul ul li:hover > ul,
+      .main-navigation ul ul li.focus > ul, .alternate-navigation ul ul li.focus > ul {
         left: 100%; }
-      .main-navigation ul ul a {
+      .main-navigation ul ul a, .alternate-navigation ul ul a {
         width: 200px; }
-    .main-navigation ul li:hover > ul,
-    .main-navigation ul li.focus > ul {
+    .main-navigation ul li:hover > ul, .alternate-navigation ul li:hover > ul,
+    .main-navigation ul li.focus > ul, .alternate-navigation ul li.focus > ul {
       left: auto; }
-  .main-navigation li {
+  .main-navigation li, .alternate-navigation li {
     float: left;
     position: relative; }
-  .main-navigation a {
+  .main-navigation a, .alternate-navigation a {
     display: block;
     text-decoration: none; }
 
 /* Small menu. */
 .menu-toggle,
-.main-navigation.toggled ul {
+.main-navigation.toggled ul, .toggled.alternate-navigation ul {
   display: block; }
 
 @media screen and (min-width: 768px) {
   .menu-toggle {
     display: none; }
-  .main-navigation ul {
+  .main-navigation ul, .alternate-navigation ul {
     display: block; } }
 
 .site-main .comment-navigation, .site-main
@@ -532,8 +532,9 @@ a {
   text-align: right;
   width: 50%; }
 
-.main-navigation {
-  margin: 0 auto;
+/* white navigation bar */
+.main-navigation, .alternate-navigation {
+  width: 100%;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: end;
@@ -543,7 +544,7 @@ a {
   position: fixed;
   top: 0;
   z-index: 10; }
-  .main-navigation .nav-container {
+  .main-navigation .nav-container, .alternate-navigation .nav-container {
     display: -ms-flexbox;
     display: flex;
     -ms-flex-pack: justify;
@@ -551,22 +552,22 @@ a {
     margin: 0 auto;
     width: 1120px;
     padding: .2rem 0; }
-  .main-navigation .menu-main-menu-container {
+  .main-navigation .menu-main-menu-container, .alternate-navigation .menu-main-menu-container {
     display: -ms-flexbox;
     display: flex;
     -ms-flex-pack: end;
         justify-content: flex-end; }
-  .main-navigation li {
+  .main-navigation li, .alternate-navigation li {
     width: auto;
     margin: .5rem .75rem; }
-  .main-navigation a {
-    font-family: 'novecento';
-    text-decoration: none;
+  .main-navigation a, .alternate-navigation a {
+    font-family: 'novecento', sans-serif;
     text-transform: uppercase;
+    text-decoration: none;
     color: #248A83; }
-  .main-navigation a:hover {
-    color: #2f1339; }
-  .main-navigation .logo {
+    .main-navigation a:hover, .alternate-navigation a:hover {
+      color: #2f1339; }
+  .main-navigation .logo, .alternate-navigation .logo {
     background: url("../../images/logos/inhabitent-logo-tent.svg") no-repeat center top;
     background-size: cover;
     width: 50px;
@@ -574,113 +575,52 @@ a {
     -ms-flex-item-align: center;
         -ms-grid-row-align: center;
         align-self: center; }
-  .main-navigation .nav-left-menu {
+  .main-navigation .nav-left-menu, .alternate-navigation .nav-left-menu {
     display: -ms-flexbox;
     display: flex; }
-  .main-navigation .search-form {
+  .main-navigation .search-form, .alternate-navigation .search-form {
     display: -ms-flexbox;
     display: flex; }
-    .main-navigation .search-form fieldset {
+    .main-navigation .search-form fieldset, .alternate-navigation .search-form fieldset {
       border: none;
       padding: 0;
       -ms-flex-item-align: center;
           -ms-grid-row-align: center;
           align-self: center; }
-    .main-navigation .search-form label {
+    .main-navigation .search-form label, .alternate-navigation .search-form label {
       display: -ms-flexbox;
       display: flex; }
-    .main-navigation .search-form button.search-submit {
+    .main-navigation .search-form button.search-submit, .alternate-navigation .search-form button.search-submit {
       display: none; }
-    .main-navigation .search-form input {
-      border: none;
+    .main-navigation .search-form input, .alternate-navigation .search-form input {
       font-family: 'novecento', sans-serif;
       text-transform: uppercase;
+      border: none;
       padding: 0;
       outline: none;
       background: transparent;
       margin-left: 1rem; }
-    .main-navigation .search-form .search-field {
+    .main-navigation .search-form .search-field, .alternate-navigation .search-form .search-field {
       display: none; }
-    .main-navigation .search-form i.fa-search {
+    .main-navigation .search-form i.fa-search, .alternate-navigation .search-form i.fa-search {
       color: #248A83;
       margin-left: .75rem; }
 
+/* transparent navigation bar */
 .alternate-navigation {
-  margin: 0 auto;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: end;
-      justify-content: flex-end;
   background-color: transparent;
   border-bottom: none;
-  position: absolute;
-  top: 0;
-  z-index: 10; }
-  .alternate-navigation #primary-menu {
-    background-color: none; }
-  .alternate-navigation .nav-container {
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-pack: justify;
-        justify-content: space-between;
-    margin: 0 auto;
-    width: 1120px;
-    padding: .2rem 0; }
-  .alternate-navigation .menu-main-menu-container {
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-pack: end;
-        justify-content: flex-end; }
-  .alternate-navigation li {
-    width: auto;
-    margin: .5rem .75rem; }
+  position: absolute; }
   .alternate-navigation a {
-    font-family: 'novecento';
-    text-decoration: none;
-    text-transform: uppercase;
     color: #fff; }
-  .alternate-navigation a:hover {
-    color: #f0e4d1; }
+    .alternate-navigation a:hover {
+      color: #f0e4d1; }
   .alternate-navigation .logo {
-    background: url("../../images/logos/inhabitent-logo-tent-white.svg") no-repeat center top;
-    background-size: cover;
-    width: 50px;
-    height: 33px;
-    -ms-flex-item-align: center;
-        -ms-grid-row-align: center;
-        align-self: center; }
-  .alternate-navigation .nav-left-menu {
-    display: -ms-flexbox;
-    display: flex; }
-  .alternate-navigation .search-form {
-    display: -ms-flexbox;
-    display: flex; }
-    .alternate-navigation .search-form fieldset {
-      border: none;
-      padding: 0;
-      -ms-flex-item-align: center;
-          -ms-grid-row-align: center;
-          align-self: center; }
-    .alternate-navigation .search-form label {
-      display: -ms-flexbox;
-      display: flex; }
-    .alternate-navigation .search-form button.search-submit {
-      display: none; }
-    .alternate-navigation .search-form input {
-      border: none;
-      font-family: 'novecento', sans-serif;
-      text-transform: uppercase;
-      padding: 0;
-      outline: none;
-      background: transparent;
-      margin-left: 1rem; }
-    .alternate-navigation .search-form .search-field {
-      display: none; }
-    .alternate-navigation .search-form i.fa-search {
-      color: #fff;
-      margin-left: .75rem; }
-      .alternate-navigation .search-form i.fa-search:hover {
-        color: #f0e4d1; }
+    background: url("../../images/logos/inhabitent-logo-tent-white.svg") no-repeat center top; }
+  .alternate-navigation .search-form i.fa-search {
+    color: #fff; }
+    .alternate-navigation .search-form i.fa-search:hover {
+      color: #f0e4d1; }
 
 /*--------------------------------------------------------------
 # Accessibility
