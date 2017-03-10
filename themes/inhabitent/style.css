@@ -1236,6 +1236,56 @@ object {
             padding: 11px 22px;
             border: 1px solid #248A83; }
 
+/* Single -- Adventures */
+.single-adventures .header-container,
+.single-adventures .content-container {
+  width: 800px;
+  margin: 0 auto;
+  padding-bottom: 2rem; }
+
+.single-adventures .entry-header {
+  font-family: 'novecento', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 2px; }
+  .single-adventures .entry-header .entry-title {
+    font-size: 2.5rem;
+    line-height: 3rem;
+    margin-bottom: .5rem; }
+  .single-adventures .entry-header .entry-meta {
+    font-size: 1.3rem; }
+
+.single-adventures img {
+  width: 100vw; }
+
+.single-adventures .product-social-links {
+  display: -ms-flexbox;
+  display: flex; }
+  .single-adventures .product-social-links a {
+    font-family: 'novecento', sans-serif;
+    text-transform: uppercase;
+    font-size: .9rem;
+    padding: 11px 22px;
+    border: 1px solid #404040;
+    color: #404040;
+    margin-right: 5px; }
+    .single-adventures .product-social-links a:hover {
+      background-color: #248A83;
+      color: #fff;
+      font-family: 'novecento', sans-serif;
+      text-transform: uppercase;
+      font-size: .9rem;
+      padding: 11px 22px;
+      border: 1px solid #248A83; }
+
+.single-adventures .entry-footer {
+  font-family: 'novecento', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  letter-spacing: 0; }
+
+.single-adventures .cat-links {
+  margin-right: 1.5rem; }
+
 /* Archive -- Journal & Month */
 .blog .site-content, .tag .site-content,
 .category .site-content,

@@ -389,11 +389,35 @@
                         color: $white;
                     }
                 }
-                
             }
-            
         }
     }
+}
+
+
+/* Single -- Adventures */
+.single-adventures {
+    .header-container,
+    .content-container {
+        width: 800px;
+        margin: 0 auto;
+        padding-bottom: 2rem;
+    }
+    .entry-header {
+        @include heading-font;
+        .entry-title {
+            font-size: 2.5rem;
+            line-height: 3rem;
+            margin-bottom: .5rem;
+        }
+        .entry-meta {
+            font-size: 1.3rem;
+        }
+    }
+    img {
+        width: 100vw;
+    }
+    @include social-links;
 }
 
 /* Archive -- Journal & Month */
