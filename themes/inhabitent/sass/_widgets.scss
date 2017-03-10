@@ -24,6 +24,9 @@
 	}
 	/* Business Hours widget */
 	.business-hours-widget-class {
+		p {
+			margin: 1rem 0;
+		}
 		.business-hours-day {
 			font-weight: bold;
 		}
