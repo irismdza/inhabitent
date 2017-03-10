@@ -6,7 +6,7 @@
  */
 
 get_header(); ?>
-     <section class="front-page-hero">
+     <section id="hero-image" class="front-page-hero">
         <img src="<?php echo get_template_directory_uri(); ?>/images/logos/inhabitent-logo-full.svg" alt="Inhabitent Camping Supply Logo" />
     </section>
 

@@ -7,7 +7,7 @@
 
 get_header(); ?>
 
-	<header class="entry-header">
+	<header id="hero-image" class="entry-header">
 		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
 	</header><!-- .entry-header -->
 
