@@ -172,3 +172,12 @@ function remove_product_type_title( $title ) {
 	return $title;
 }
 add_filter( 'get_the_archive_title', 'remove_product_type_title' );
+
+// Change Adventure Archive title
+function change_adventure_archive_title( $title ) {
+	if ( is_post_type_archive( 'adventures') ) {
+        $title = 'Latest Adventures';
+	}
+	return $title;
+}
+add_filter( 'get_the_archive_title', 'change_adventure_archive_title' );

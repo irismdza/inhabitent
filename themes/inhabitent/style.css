@@ -1168,8 +1168,73 @@ object {
   margin: 0 auto; }
 
 .post-type-archive-adventures .content-area {
-  display: -ms-flexbox;
-  display: flex; }
+  margin-top: 50px;
+  padding: 2rem 0 0 0; }
+  .post-type-archive-adventures .content-area .page-title {
+    font-family: 'novecento', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 2.4rem;
+    margin-top: 0;
+    text-align: center; }
+  .post-type-archive-adventures .content-area .post-grid {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    border-top: 1px dashed #c8c8c8;
+    padding: 3rem 0 7rem 0; }
+    .post-type-archive-adventures .content-area .post-grid article {
+      -ms-flex: 1 1 49%;
+          flex: 1 1 49%;
+      position: relative; }
+      .post-type-archive-adventures .content-area .post-grid article:first-child, .post-type-archive-adventures .content-area .post-grid article:nth-child(3) {
+        margin-right: 10px; }
+      .post-type-archive-adventures .content-area .post-grid article:nth-child(2), .post-type-archive-adventures .content-area .post-grid article:last-child {
+        margin-left: 10px; }
+      .post-type-archive-adventures .content-area .post-grid article .post-thumbnail {
+        background: linear-gradient(to bottom, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.4) 100%);
+        background-size: cover;
+        width: 550px; }
+      .post-type-archive-adventures .content-area .post-grid article img {
+        display: block;
+        object-fit: cover;
+        height: 550px;
+        width: 550px;
+        z-index: -1;
+        position: relative; }
+      .post-type-archive-adventures .content-area .post-grid article .post-meta-data {
+        position: absolute;
+        top: 1rem;
+        padding: 2.2rem 1.8rem; }
+      .post-type-archive-adventures .content-area .post-grid article .entry-title a {
+        color: #fff;
+        font-size: 3.1rem;
+        font-weight: normal;
+        line-height: 3.9rem;
+        letter-spacing: 1.5px; }
+        .post-type-archive-adventures .content-area .post-grid article .entry-title a:hover {
+          color: #f0e4d1; }
+      .post-type-archive-adventures .content-area .post-grid article .post-link {
+        padding-top: 3rem; }
+        .post-type-archive-adventures .content-area .post-grid article .post-link a.read-entry-link {
+          font-family: 'novecento', sans-serif;
+          text-transform: uppercase;
+          font-size: .9rem;
+          padding: 11px 22px;
+          border: 1px solid #404040;
+          color: #404040;
+          margin-right: 5px;
+          border-color: #fff;
+          color: #fff; }
+          .post-type-archive-adventures .content-area .post-grid article .post-link a.read-entry-link:hover {
+            background-color: #248A83;
+            color: #fff;
+            font-family: 'novecento', sans-serif;
+            text-transform: uppercase;
+            font-size: .9rem;
+            padding: 11px 22px;
+            border: 1px solid #248A83; }
 
 /* Archive -- Journal & Month */
 .blog .site-content, .tag .site-content,
