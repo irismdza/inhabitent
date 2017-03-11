@@ -425,6 +425,9 @@
 .blog {
     @include flex-site-content;
     @include content-area;
+    article {
+        margin-bottom: 4rem;
+    }
     .entry-header {
         position: relative;
         img {

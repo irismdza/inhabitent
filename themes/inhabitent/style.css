@@ -1310,6 +1310,12 @@ object {
   margin-top: 50px;
   padding: 3rem 3rem 4rem 0; }
 
+.blog article, .single-post article,
+.archive.date article,
+.category article,
+.tag article {
+  margin-bottom: 4rem; }
+
 .blog .entry-header, .single-post .entry-header,
 .archive.date .entry-header,
 .category .entry-header,
