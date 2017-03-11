@@ -76,6 +76,15 @@
 	}
 }
 
+@mixin green-dark-green-button {
+	@include green-button-link;
+	margin-right: 5px;
+	&:hover {
+		background-color: #19625d;
+		border-color: #19625d;
+	}
+}
+
 // White link with hover style
 @mixin white-yellow-link {
 	color: $white;

@@ -1488,6 +1488,9 @@ object {
   margin-top: 50px;
   padding: 3rem 3rem 4rem 0; }
 
+.search-results article, .page-id-43 article, .error404 article, .search-no-results article {
+  margin-bottom: 4rem; }
+
 .search-results .entry-title, .page-id-43 .entry-title, .error404 .entry-title, .search-no-results .entry-title,
 .search-results .entry-content h2, .page-id-43 .entry-content h2, .error404 .entry-content h2, .search-no-results .entry-content h2 {
   font-family: 'novecento', sans-serif;
@@ -1527,6 +1530,22 @@ object {
     font-size: .9rem;
     padding: 11px 22px;
     border: 1px solid #248A83; }
+
+.search-results .page-numbers, .page-id-43 .page-numbers, .error404 .page-numbers, .search-no-results .page-numbers {
+  background-color: #248A83;
+  color: #fff;
+  font-family: 'novecento', sans-serif;
+  text-transform: uppercase;
+  font-size: .9rem;
+  padding: 11px 22px;
+  border: 1px solid #248A83;
+  padding: 7px 13px; }
+  .search-results .page-numbers:hover, .page-id-43 .page-numbers:hover, .error404 .page-numbers:hover, .search-no-results .page-numbers:hover {
+    background-color: #19625d;
+    border-color: #19625d; }
+  .search-results .page-numbers.current, .page-id-43 .page-numbers.current, .error404 .page-numbers.current, .search-no-results .page-numbers.current {
+    background-color: #808080;
+    border-color: #808080; }
 
 /* Find Us */
 .page-id-43 .entry-title {

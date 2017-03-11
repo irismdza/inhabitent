@@ -519,6 +519,9 @@
 .search-results {
     @include flex-site-content;
     @include content-area;
+    article {
+        margin-bottom: 4rem;
+    }
     .entry-title, 
     .entry-content h2 {
         @include heading-font;
@@ -538,6 +541,19 @@
     }
     a.read-more {
         @include grey-green-button;
+    }
+
+    .page-numbers {
+        @include green-button-link;
+        padding: 7px 13px;
+        &:hover {
+            background-color: #19625d;
+            border-color: #19625d;
+        }
+        &.current {
+        background-color: $medium-grey;
+        border-color: $medium-grey;
+        }
     }
 }
 
