@@ -606,6 +606,7 @@
                 border: $grey-border;
                 border-radius: 0;
                 background-color: #f4f4f4;
+                @include uppercase-font;
             }
             button.search-submit,
             .fa-search {

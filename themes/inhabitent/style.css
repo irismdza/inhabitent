@@ -1601,7 +1601,9 @@ object {
   .error404 .content-area .search-form fieldset input[type=search], .search-no-results .content-area .search-form fieldset input[type=search] {
     border: 1px solid #e1e1e1;
     border-radius: 0;
-    background-color: #f4f4f4; }
+    background-color: #f4f4f4;
+    font-family: 'novecento', sans-serif;
+    text-transform: uppercase; }
   .error404 .content-area .search-form fieldset button.search-submit,
   .error404 .content-area .search-form fieldset .fa-search, .search-no-results .content-area .search-form fieldset button.search-submit,
   .search-no-results .content-area .search-form fieldset .fa-search {
