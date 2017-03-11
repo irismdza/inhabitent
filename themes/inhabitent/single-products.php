@@ -26,7 +26,7 @@ get_header(); ?>
 				<div class="product-description-wrapper">
 				<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
 					<p class="product-price"><?php echo CFS()->get('price'); ?></p>
-					<p><?php echo CFS()->get('product_description'); ?></p>
+					<p><?php the_content(); ?></p>
 					<div class="product-social-links">
 						<p>
 							<a><i class="fa fa-facebook" aria-hidden="true"></i> Like</a>

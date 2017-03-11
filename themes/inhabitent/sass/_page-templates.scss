@@ -422,11 +422,10 @@
 
 
 /* Archive -- Journal & Month */
-.blog, 
-.archive.date {
+.blog {
     @include flex-site-content;
     @include content-area;
-    .entry-header{
+    .entry-header {
         position: relative;
         img {
             width: 100%;
@@ -468,13 +467,29 @@
     }
 }
 
-/* Archive -- Categories & Tags */
-.tag,
+.single-post,
+.archive.date,
 .category,
-.single-post {
+.tag {
     @extend .blog;
     @include social-links;
 }
+
+/* Archive headings -- Month Archive, Categories, Tags */
+.archive.date,
+.category,
+.tag {
+    .hentry {
+        margin-bottom: 4.5rem;
+    }
+    .page-title {
+        @include heading-font;
+        margin: 0 0 3rem 0;;
+        font-size: 2.4rem;
+        border-bottom: $grey-border;
+    }
+}
+
 
 /* About page */
 .page-id-40 {
