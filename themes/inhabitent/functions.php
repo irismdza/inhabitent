@@ -93,7 +93,8 @@ function red_starter_scripts() {
 
 	// jquery
 	wp_enqueue_script( 'jquery' );
-		//jquery nav scroll
+		
+		// jquery nav scroll
      if ( is_page( 'home' ) || is_page('about') || is_singular('adventures') ) {
 		wp_enqueue_script( 'red_comments', get_template_directory_uri().'/js/nav.js', array( 'jquery'), '2.0', true);
 	 };

@@ -476,6 +476,9 @@
 .tag {
     @extend .blog;
     @include social-links;
+    article {
+        margin-bottom: 1rem;
+    }
 }
 
 /* Archive headings -- Month Archive, Categories, Tags */
@@ -490,6 +493,81 @@
         margin: 0 0 3rem 0;;
         font-size: 2.4rem;
         border-bottom: $grey-border;
+    }
+}
+
+/* Comments */
+.single-post {
+    .comments-area {
+        ol {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .comments-title {
+            @include heading-font;
+            font-size: 2.2rem;
+        }
+        .comment-body {
+            display: flex;
+            padding-bottom: 1.5rem;
+            margin-bottom: 2rem;
+            border-bottom: $grey-border;
+        }
+        img.avatar {
+            border-radius: 50px;
+            margin-right: 1.5rem;
+        }
+        .comment-author {
+            font-weight: bold;
+            cite {
+                font-style: normal;
+            }
+        }
+        .comment-metadata {
+            color: $medium-grey;
+        }
+        .comment-reply-title {
+            @include heading-font;
+            font-size: 1.8rem;
+        }
+        .comment-form {
+            display: flex;
+            flex-wrap: wrap;
+            label {
+            @include uppercase-font;
+            font-size: 1.1rem;
+            display: block;
+            }
+            textarea,
+            input[type="text"],
+            input[type="email"],
+            input[type="url"] {
+                background-color: #f4f4f4;
+                border: $grey-border;
+                border-radius: 0;
+                margin-top: .5rem;
+            }
+            .comment-form-comment {
+                flex: 1 1 100%;
+            }
+            .comment-form-author,
+            .comment-form-email {
+                flex: 1 1 50%;
+                input {
+                    width: 100%;
+                }
+            }
+            .comment-form-url {
+                flex: 1 1 100%;
+            }
+        }
+        input[type="submit"] {
+            @include green-button-link;
+            box-shadow: none;
+            text-shadow: none;
+            border-radius: 0px;
+        }
     }
 }
 

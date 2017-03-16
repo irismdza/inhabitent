@@ -1440,6 +1440,12 @@ object {
 .tag .cat-links {
   margin-right: 1.5rem; }
 
+.single-post article,
+.archive.date article,
+.category article,
+.tag article {
+  margin-bottom: 1rem; }
+
 /* Archive headings -- Month Archive, Categories, Tags */
 .archive.date .hentry,
 .category .hentry,
@@ -1455,6 +1461,87 @@ object {
   margin: 0 0 3rem 0;
   font-size: 2.4rem;
   border-bottom: 1px solid #e1e1e1; }
+
+/* Comments */
+.single-post .comments-area ol {
+  list-style: none;
+  padding: 0;
+  margin: 0; }
+
+.single-post .comments-area .comments-title {
+  font-family: 'novecento', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 2.2rem; }
+
+.single-post .comments-area .comment-body {
+  display: -ms-flexbox;
+  display: flex;
+  padding-bottom: 1.5rem;
+  margin-bottom: 2rem;
+  border-bottom: 1px solid #e1e1e1; }
+
+.single-post .comments-area img.avatar {
+  border-radius: 50px;
+  margin-right: 1.5rem; }
+
+.single-post .comments-area .comment-author {
+  font-weight: bold; }
+  .single-post .comments-area .comment-author cite {
+    font-style: normal; }
+
+.single-post .comments-area .comment-metadata {
+  color: #808080; }
+
+.single-post .comments-area .comment-reply-title {
+  font-family: 'novecento', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 1.8rem; }
+
+.single-post .comments-area .comment-form {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+  .single-post .comments-area .comment-form label {
+    font-family: 'novecento', sans-serif;
+    text-transform: uppercase;
+    font-size: 1.1rem;
+    display: block; }
+  .single-post .comments-area .comment-form textarea,
+  .single-post .comments-area .comment-form input[type="text"],
+  .single-post .comments-area .comment-form input[type="email"],
+  .single-post .comments-area .comment-form input[type="url"] {
+    background-color: #f4f4f4;
+    border: 1px solid #e1e1e1;
+    border-radius: 0;
+    margin-top: .5rem; }
+  .single-post .comments-area .comment-form .comment-form-comment {
+    -ms-flex: 1 1 100%;
+        flex: 1 1 100%; }
+  .single-post .comments-area .comment-form .comment-form-author,
+  .single-post .comments-area .comment-form .comment-form-email {
+    -ms-flex: 1 1 50%;
+        flex: 1 1 50%; }
+    .single-post .comments-area .comment-form .comment-form-author input,
+    .single-post .comments-area .comment-form .comment-form-email input {
+      width: 100%; }
+  .single-post .comments-area .comment-form .comment-form-url {
+    -ms-flex: 1 1 100%;
+        flex: 1 1 100%; }
+
+.single-post .comments-area input[type="submit"] {
+  background-color: #248A83;
+  color: #fff;
+  font-family: 'novecento', sans-serif;
+  text-transform: uppercase;
+  font-size: .9rem;
+  padding: 11px 22px;
+  border: 1px solid #248A83;
+  box-shadow: none;
+  text-shadow: none;
+  border-radius: 0px; }
 
 /* About page */
 .page-id-40 .entry-title {
